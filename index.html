@@ -120,11 +120,11 @@
 					return this._div; 
 				}
 
+
 				info.update = function(props) {
-					this._div.innerHTML = '<h4>Results</h4>' + (props ? '<h3>' + props.NAME + ' County</h3><br>' + '<h6>Clinton: ' + props.demp2016 + '%<br>' + 'Trump: ' + props.gopp2016 + '%<br>' + 'Margin: ' + Math.abs(props.movp2016) + ' pts</h6>'
+					this._div.innerHTML = '<h4>Results</h4>' + (props ? '<h3>' + props.COUNTYNAME + ' County</h3><br>' + '<h6>Clinton: ' + props.demp2016 + '%<br>' + 'Trump: ' + props.gopp2016 + '%<br>' + 'Margin: ' + Math.abs(props.movp2016) + ' pts</h6>'
 						:'<br><h5>Hover over a county</h5>');
 				};
-
 				info.addTo(map);
 
 
@@ -219,7 +219,7 @@
 
 			    <script type="text/javascript">
             	// Leaflet Code Map 2
-				var map = L.map('map2').setView([34.980061, -78.919841], 3);
+				var map2 = L.map('map2').setView([34.980061, -78.919841], 3);
 
 				L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 					maxZoom: 6.45,
@@ -228,25 +228,25 @@
 					attribution: 'Map data from <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="_blank">U.S. Census Bureau</a> + ' +
 						'<a href="https://uselectionatlas.org/" target="_blank">Election Atlas by Dave Leip</a>' ,
 					id: 'mapbox.dark'
-				}).addTo(map);
+				}).addTo(map2);
 				console.log("map loaded")
 
 				// control that shows state info on hover
 
-				var info = L.control();
+				var info2 = L.control();
 
-				info.onAdd = function(map) {
-					this._div = L.DomUtil.create('div', 'info');
+				info2.onAdd = function(map2) {
+					this._div = L.DomUtil.create('div', 'info2');
 					this.update();
 					return this._div; 
 				}
 
-				info.update = function(props) {
+				info2.update = function(props) {
 					this._div.innerHTML = '<h4>Results</h4>' + (props ? '<h3>' + props.NAME + ' County</h3><br>' + '<h6>Gore: ' + props.demp2000 + '%<br>' + 'Bush: ' + props.gopp2000 + '%<br>' + 'Margin: ' + Math.abs(props.movp2000) + ' pts</h6>'
 						:'<br><h5>Hover over a county</h5>');
 				};
 
-				info.addTo(map);
+				info2.addTo(map2);
 
 
 				/*
@@ -255,7 +255,7 @@
 				}
 				*/
 
-				var geojson = L.geoJson(pElec00, {style: style}).addTo(map);
+				var geojson = L.geoJson(pElec00, {style: style}).addTo(map2);
 				console.log(geojson.getLayers().length);
 				console.log(pElec00.features.length);
 
@@ -293,7 +293,7 @@
 						layer.bringToFront();
 					};
 
-					info.update(layer.feature.properties);
+					info2.update(layer.feature.properties);
 				}
 
 				function resetHighlight(e) {
@@ -311,7 +311,7 @@
 					var geojson = L.geoJson(pElec00, {
 						style: style,
 						onEachFeature: onEachFeature
-					}).addTo(map);
+					}).addTo(map2);
 				
 
 				//L.geoJson(pElec00).addTo(map);
