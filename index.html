@@ -191,7 +191,8 @@
 						style: style,
 						onEachFeature: onEachFeature
 					}).addTo(map);
-				
+
+
 
 				//L.geoJson(pElec16).addTo(map);
 			</script>
@@ -240,7 +241,7 @@
 					this.update();
 					return this._div; 
 				}
-
+				console.log("info function one added")
 				info2.update = function(props) {
 					this._div.innerHTML = '<h4>Results</h4>' + (props ? '<h3>' + props.NAME + ' County</h3><br>' + '<h6>Gore: ' + props.demp2000 + '%<br>' + 'Bush: ' + props.gopp2000 + '%<br>' + 'Margin: ' + Math.abs(props.movp2000) + ' pts</h6>'
 						:'<br><h5>Hover over a county</h5>');
@@ -255,8 +256,8 @@
 				}
 				*/
 
-				var geojson = L.geoJson(pElec00, {style: style}).addTo(map2);
-				console.log(geojson.getLayers().length);
+				var geojson2 = L.geoJson(pElec00, {style: style}).addTo(map2);
+				console.log(geojson2.getLayers().length);
 				console.log(pElec00.features.length);
 
 				
@@ -281,7 +282,6 @@
 
 				function highlightFeature(e) {
 					var layer = e.target;
-
 					layer.setStyle({
 						weight: 5,
 						color: '#000',
@@ -297,7 +297,7 @@
 				}
 
 				function resetHighlight(e) {
-					geojson.resetStyle(e.target);
+					geojson2.resetStyle(e.target);
 				}
 
 				console.log(highlightFeature)
@@ -308,7 +308,7 @@
 						});
 					}
 
-					var geojson = L.geoJson(pElec00, {
+					var geojson2 = L.geoJson(pElec00, {
 						style: style,
 						onEachFeature: onEachFeature
 					}).addTo(map2);
@@ -327,6 +327,7 @@
     <hr />
 
      <!-- 2002 Senate Section -->
+     <!---
     <section id="elections" class="elections-section text-center">
       <div class="container">
         <div class="row">
@@ -350,7 +351,7 @@
       <div class="container">
         <div class="col-lg-8 mx-auto">
           <h2>Data Sources & Methods</h2>
-          <p>I pulled all of the election data from Dave Leip's Election Atlas as well as American University's School of Public Policy.</p>
+          <p>I pulled all of the election data from Dave Leip's Election Atlas and the shapefiles from the U.S. Census Bureau.</p>
           <a href="https://uselectionatlas.org/" class="btn btn-default btn-lg">Dave Leip's Election Atlas</a>
           <a href="https://uselectionatlas.org/" class="btn btn-default btn-lg">U.S. Census Bureau</a>
         </div>
