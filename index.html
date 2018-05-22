@@ -63,7 +63,7 @@
               <a class="nav-link js-scroll-trigger" href="#elections">Elections</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#data">Data</a>
+              <a class="nav-link js-scroll-trigger" href="#data">Sources</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -95,19 +95,38 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
+			<h2 style="padding-top: 2em; margin-bottom: 10px">American Political Polarization</h2>
+            
+            <h6 style="font-family: Work Sans, Helvetica; font-weight: 300; margin-top: 0px; margin-bottom: 15px">Considering Space</h6>
+            
+            <p style="text-align: left"><br><br>By all accounts, the United States is dealing with an increasingly vitriolic, polarized political system. Political polarization has grabbed the attention of media outlets across the political spectrum: <em>Vox.com</em> ran a <a href="https://www.vox.com/the-big-idea/2017/9/5/16227700/hyperpartisanship-identity-american-democracy-problems-solutions-doom-loop target="_blank"">headline</a> in September 2017 warning that “rabid partisanship could destroy American democracy” while the <em>Wall Street Journal</em> <a href=https://www.wsj.com/articles/political-divisions-in-u-s-are-widening-long-lasting-poll-shows-1504670461 target="_blank">proclaimed</a> that “Political Divisions in U.S. Are Widening, Long-Lasting.” <br><br>
+
+            Perhaps to no one’s surprise, Pew Research Center <a href="http://www.people-press.org/2017/10/05/the-partisan-divide-on-political-values-grows-even-wider/." target="_blank">found</a> that since 1994, the partisan gap between Democrats and Republicans nationwide has jumped from 15 points to 36 points, a record high since the survey was first conducted.
+			<br><br>
+
+			Investigations such as the surveys undertaken by Pew Research Center provide valuable data that assess the attitude of the electorate, but offer only a bird’s eye view of American politics by privileging reported attitudes and non-spatial statistics over outcomes of elections and smaller-scale spatial data. <br><br>
+
+			Taking a more geographic approach, John Agnew and Luca Muscará (two political geographers) assert that, <b>“not only is American politics increasingly polarized ideologically, but the country itself is increasingly geographically polarized politically, albeit not at the state level of sections or macroregions, but at the scale of counties, suburbs, and municipalities.”</b><br><br>
+
+
+			Let's take a look two elections in North Carolina &ndash; the 2000 and 2016 presidential elections &ndash; to take a closer look at the evolution of spatial-political polarization in the state. 
+			</p>
+
             <h2 style="padding-top: 2em; margin-bottom: 10px">2016 Presidential Election</h2>
             <h6 style="font-family: Work Sans, Helvetica; font-weight: 300; margin-top: 0px; margin-bottom: 15px">Donald Trump* (R) & Hillary Clinton (D)</h6>
+            
+
+            <!--MAP DIV-->
             <div id='map'></div>
+            
 
-            <style>
+            <br><br>
+            <p><b>2016 Total Landslide Counties</b>: 39<br><b>2016 Republican Landslide Counties</b>: 34<br><b>2016 Democratic Landslide Counties</b>: 5
+            </p>
 
-              #chart svg {
-                height: 400px;
-              }
+            <p style="text-align: left">During the 2016 presidential election in North Carolina, 39 counties were landslide counties (or counties where the margin of victory exceeds 30 points). Of those 39, 87% were won by Donald Trump.<br><br></p>
 
-            </style>
-
-
+<!--
 <div id="chart">
   <svg></svg>
 </div>
@@ -128,16 +147,17 @@ nv.addGraph(function() {
   return chart;
 });
 </script>
-			<style>
-				.leaflet-container {
-					background-color:rgba(255,0,0,0.0);
-				}
+-->
+	<style>
+		.leaflet-container {
+		background-color:rgba(255,0,0,0.0);
+		}
 
-			</style>
+	</style>
 
 		<script type="text/javascript" src="json/nc_2016p_2.geojson"></script>
 		<script type="text/javascript" src="json/nc_2000p.geojson"></script>
-            <script type="text/javascript">
+        <script type="text/javascript">
             	// Leaflet Code
 				var map = L.map('map').setView([34.980061, -78.919841], 3);
 
@@ -256,6 +276,10 @@ nv.addGraph(function() {
         	.bindTooltip("Asheville")
         	.openTooltip(map)
         	.addTo(map);
+        L.marker([36.0726, -79.7920], {icon: point})
+        	.bindTooltip("Greensboro")
+        	.openTooltip(map)
+        	.addTo(map);
 
         var legend = L.control({position: 'bottomright'});
 
@@ -285,9 +309,9 @@ nv.addGraph(function() {
             }	else if (grades[i] > 30) {
             	llabel = '(0-15)'
             }	else if (grades[i] > 15) {
-            	llabel = '(15-30)'
-            }	else if (grades[i] > 0) {
             	llabel = '(30+)'
+            }	else if (grades[i] > 0) {
+            	llabel = '(15-30)'
             }
 
               labels.push(
@@ -303,10 +327,7 @@ nv.addGraph(function() {
 
 
 			<br>
-            <p style="text-align: left;">(summary of the 2016 election in North Carolina)</p>
-            <p style="text-align: left;">(assessment of level of polarization at the county level, i.e. count of landslide counties [D&R])</p>
-            <p style="text-align: left;">(lead into the 'how did we get here' question)</p>
-          </div>
+		</div>
         </div>
       </div>
     </section>
@@ -321,6 +342,12 @@ nv.addGraph(function() {
             <h2 style="padding-top: 2em; margin-bottom: 10px">2000 Presidential Election</h2>
             <h6 style="font-family: Work Sans, Helvetica; font-weight: 300; margin-top: 0px; margin-bottom: 15px">George W. Bush* (R) & Al Gore (D)</h6>
 			<div id='map2'></div>
+
+			<br><br>
+            <p><b>2000 Total Landslide Counties</b>: 30<br><b>2000 Republican Landslide Counties</b>: 26<br><b>2000 Democratic Landslide Counties</b>: 4
+            </p>
+
+            <p style="text-align: left">While the total number of landslide counties as well as the Republican-won landslide counties increased by a third, the number of Democratic counties hardly budged. <br><br>Such a trend could be explained by any number of forces: collective movement to the right on the part of the Republican party, a shift of Democratic voters out of traditionally conservative areas to urban cores (which are perhaps not coincidentally Democratic strongholds), successful efforts to get out the Republican vote, or successful efforts to stifle the Democratic vote in the state (check out what the Atlantic has to say on that <a href="https://www.theatlantic.com/politics/archive/2016/11/north-carolina-early-voting/506963/" target="_blank">here</a>.<br><br></p>
 
 			    <script type="text/javascript">
             	// Leaflet Code Map 2
@@ -430,6 +457,10 @@ var point = new icon({iconUrl: 'img/dot-circle.svg'});
         	.bindTooltip("Asheville")
         	.openTooltip(map2)
         	.addTo(map2);
+        L.marker([36.0726, -79.7920], {icon: point})
+        	.bindTooltip("Greensboro")
+        	.openTooltip(map)
+        	.addTo(map);
 
 
 		        var legend = L.control({position: 'bottomright'});
@@ -460,9 +491,9 @@ var point = new icon({iconUrl: 'img/dot-circle.svg'});
             }	else if (grades[i] > 30) {
             	llabel = '(0-15)'
             }	else if (grades[i] > 15) {
-            	llabel = '(15-30)'
-            }	else if (grades[i] > 0) {
             	llabel = '(30+)'
+            }	else if (grades[i] > 0) {
+            	llabel = '(15-30)'
             }
 
               labels.push(
@@ -479,9 +510,7 @@ var point = new icon({iconUrl: 'img/dot-circle.svg'});
 				//L.geoJson(pElec00).addTo(map);
 			</script>
 
-            <p style="text-align: left;">(summary of the 2000 election in North Carolina)</p>
-            <p style="text-align: left;">(assessment of level of polarization at the county level, i.e. count of landslide counties [D&R])</p>
-            <p style="text-align: left;">(lead into the 'how did we get here' question)</p>
+
           </div>
         </div>
       </div>
@@ -512,10 +541,23 @@ var point = new icon({iconUrl: 'img/dot-circle.svg'});
     <section id="data" class="data-section content-section text-center">
       <div class="container">
         <div class="col-lg-8 mx-auto">
-          <h2>Data Sources & Methods</h2>
-          <p>I pulled all of the election data from Dave Leip's Election Atlas and the shapefiles from the U.S. Census Bureau.</p>
-          <a href="https://uselectionatlas.org/" class="btn btn-default btn-lg">Dave Leip's Election Atlas</a>
-          <a href="https://uselectionatlas.org/" class="btn btn-default btn-lg">U.S. Census Bureau</a>
+
+          <h2 style="margin-top: -3.6em">Sources & Methods</h2>
+
+          <h6 style="font-family: Work Sans, Helvetica; font-size: 1.1em; font-weight: 300; margin-top: 0px; margin-bottom: 15px; letter-spacing: 0px">Sources + Other Reading</h6>
+
+          		<p style="text-align: left; font-size: 1em; padding-bottom: -.5em">Agnew, John, and Luca Muscarà. 2012. <a href="https://www.amazon.com/Making-Political-Geography-John-Agnew/dp/1442212306" target="_blank">Making Political Geography</a>. John Agnew + Luca Muscarà. 2012. Plymouth: Rowman & Littlefield Publishers, Inc.<br><br>
+				Drutman, Lee. <a href="https://www.vox.com/the-big-idea/2017/9/5/16227700/hyperpartisanship-identity-american-democracy-problems-solutions-doom-loop." target="_blank">"Hyperpartisanship could destroy U.S. democracy."</a> <em>Vox.com</em>. September 5, 2017. 
+				<br><br>Hook, Janet. <a href="https://www.wsj.com/articles/political-divisions-in-u-s-are-widening-long-lasting-poll-shows-1504670461" target="_blank">Political Divisions in U.S. Are Widening, Long-Lasting, Poll Shows."</a> <em>Wall Street Journal</em>. September 6, 2017.
+				<br><br>Pew Research Center. <a href="http://www.people-press.org/2017/10/05/the-partisan-divide-on-political-values-grows-even-wider/" target="_blank">The Partisan Divide on Political Values Grows Even Wider."</a> Pew Research Center. October 5, 2017.
+				</p><br>
+
+          <h6 style="font-family: Work Sans, Helvetica; font-size: 1.1em; font-weight: 300; margin-top: 0px; margin-bottom: 15px; letter-spacing: 0px">Election + Map Data</h6>
+
+          		<p style="text-align: left; font-size: 1em">I pulled the 2016 election data from <a href="https://uselectionatlas.org/" target="_blank">Dave Leip's Election Atlas</a>, the 2000 election data from <a href="https://www.american.edu/spa/ccps/data-sets.cfm" target="_blank">American University's School of Public Affairs</a>, and the shapefiles from the <a href="https://uselectionatlas.org/" target="_blank">U.S. Census Bureau</a>.</p>
+
+          <a href="https://uselectionatlas.org/" class="btn btn-default btn-lg" style="display: none">Dave Leip's Election Atlas</a>
+          <a href="https://uselectionatlas.org/" class="btn btn-default btn-lg" style="display: none">U.S. Census Bureau</a>
         </div>
       </div>
     </section>
