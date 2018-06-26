@@ -110,6 +110,194 @@
                 Let's take a look two elections in North Carolina &ndash; the 2000 and 2016 presidential elections &ndash; to examine the evolution of spatial-political polarization in the state. 
 			          </p>
 
+            <h2 style="padding-top: 2em; margin-bottom: 10px">2000 Presidential Election</h2>
+            <h6 style="font-family: Work Sans, Helvetica; font-weight: 300; margin-top: 0px; margin-bottom: 15px">George W. Bush* (R) & Al Gore (D)</h6>
+			     
+          <div id='map2'></div>
+          <br><br>
+          <p><b>2000 Total Landslide Counties</b>: 30<br><b>2000 Republican Landslide Counties</b>: 26<br><b>2000 Democratic Landslide Counties</b>: 4
+          </p>
+
+          <p style="text-align: left">While the total number of landslide counties as well as the Republican-won landslide counties increased by a third, the number of Democratic counties hardly budged. <br><br>Such a trend could be explained by any number of forces: collective movement to the right on the part of the Republican party, a shift of Democratic voters out of traditionally conservative areas to urban cores (which are perhaps not coincidentally Democratic strongholds), successful efforts to get out the Republican vote, or successful efforts to stifle the Democratic vote in the state (check out what the Atlantic has to say on that <a href="https://www.theatlantic.com/politics/archive/2016/11/north-carolina-early-voting/506963/" target="_blank">here</a>).<br><br>
+          </p>
+
+<script type="text/javascript">
+
+// Leaflet Code Map 2
+// Create second map variable 
+var map2 = L.map('map2', { zoomControl:false }).setView([34.980061, -78.919841], 3);
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+	maxZoom: 6.45,
+	minZoom: 6.45,
+	zoomSnap: 1,
+	attribution: 'Map data from <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="_blank">U.S. Census Bureau</a> + ' + '<a href="https://www.american.edu/spa/ccps/data-sets.cfm" target="_blank">AU School of Public Affairs</a>' ,
+	id: 'mapbox.dark'
+}).addTo(map2);
+console.log("map loaded")
+
+// control that shows state info on hover
+var info2 = L.control();
+
+info2.onAdd = function(map2) {
+	this._div = L.DomUtil.create('div', 'info2');
+	this.update();
+	return this._div; 
+}
+console.log("info function one added")
+
+
+// Election results + margin of victory
+info2.update = function(props) {
+	this._div.innerHTML = '<h4>Results</h4>' + (props ? '<h3>' + props.NAME + ' County</h3><br>' + '<h6>Gore: ' + props.demp2000 + '%<br>' + 'Bush: ' + props.gopp2000 + '%<br>' + 'Margin: ' + Math.abs(props.movp2000) + ' pts</h6>'
+	:'<br><h5>Hover over a county</h5>');
+};
+
+info2.addTo(map2);
+
+// second geojson file
+
+var geojson2 = L.geoJson(Elec00, {
+	style: style
+}).addTo(map2);
+console.log(geojson2.getLayers().length);
+console.log(Elec00.features.length);
+				
+function style(feature) {
+	return {
+	fillColor: getColor(feature.properties.movp2000),
+	weight: 1.5,
+	opacity: .5,
+	color: '#eeeeee',
+	fillOpacity: 1
+	}
+}; 
+
+// add colors to each county
+	function getColor(d) {
+  	return d > 40 ? '#3c7cc6' :
+      d > 20 ? '#81a8d9' :
+      d > 0 ? '#c0d4e9' :
+      d > -20 ? '#e5c3c3' :
+      d > -40 ? '#d48c8b' :
+           '#b51f1d' ;
+}
+
+// control hover features / colors 
+function highlightFeature(e) {
+	var layer = e.target;
+	layer.setStyle({
+		weight: 5,
+		color: '#000',
+		dashArray: '',
+		fillOpacity: 1.5
+	});
+				
+	if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+			layer.bringToFront();
+	};
+
+info2.update(layer.feature.properties);
+}
+
+function resetHighlight(e) {
+	geojson2.resetStyle(e.target);
+}
+
+console.log(highlightFeature)
+
+function onEachFeature(feature, layer) {
+	layer.on({
+		mouseover: highlightFeature,
+		mouseout: resetHighlight
+	});
+}
+
+var geojson2 = L.geoJson(Elec00, {
+	style: style,
+	onEachFeature: onEachFeature
+}).addTo(map2);
+
+// add points to the map (cities)
+var point = new icon({iconUrl: 'img/dot-circle.svg'});
+  L.marker([35.2271, -80.8431], {icon: point})
+  	.bindTooltip("Charlotte")
+   	.openTooltip(map2)
+   	.addTo(map2);
+  L.marker([35.796, -78.6382], {icon: point})
+   	.bindTooltip("Raleigh")
+   	.openTooltip(map2)
+   	.addTo(map2);
+  L.marker([35.5951, -82.5515], {icon: point})
+   	.bindTooltip("Asheville")
+  	.openTooltip(map2)
+  	.addTo(map2);
+  L.marker([36.0726, -79.7920], {icon: point})
+  	.bindTooltip("Greensboro")
+  	.openTooltip(map)
+  	.addTo(map);
+
+// legend controls 
+var legend = L.control({position: 'bottomright'});
+
+legend.onAdd = function (map) {
+
+  var div = L.DomUtil.create('div', 'info legend'),
+    grades = [-60, -40, -20, 0, 20, 40],
+    labels = ["<b>Margin of Victory (pts)</b>"],
+  from, to;
+  
+  // create the llabel variable for the legend
+  for (var i = 0; i < grades.length; i++) {
+    from = grades[i];
+    to = grades[i + 1];
+            
+  if(grades[i] < 0) {
+    party = 'GOP'
+  } else {
+    party = 'Dem'
+  }
+
+  if (grades[i] < -40) {
+  	llabel = '(40+)'
+  }	else if (grades[i] < -20) {
+  	llabel = '(20-40)'
+  }	else if (grades[i] < 0) {
+  	llabel = '(0-20)'
+  }	else if (grades[i] > 40) {
+  	llabel = '(0-20)'
+  }	else if (grades[i] > 20) {
+  	llabel = '(40+)'
+  }	else if (grades[i] > 0) {
+  	llabel = '(20-30)'
+  }
+
+labels.push(
+  '<i style="background:' + getColor(from + 1) + '"></i>'+ party + ' ' + llabel);
+
+  }
+
+div.innerHTML = labels.join('<br>');
+return div;
+};
+
+legend.addTo(map2);
+</script>
+
+<br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<hr />
+
+<!-- 2016 Presidential Section -->
+  
+    <section id="elections" class="elections-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
             <h2 style="padding-top: 2em; margin-bottom: 10px">2016 Presidential Election</h2>
               <h6 style="font-family: Work Sans, Helvetica; font-weight: 300; margin-top: 0px; margin-bottom: 15px">Donald Trump* (R) & Hillary Clinton (D)</h6>
             
@@ -158,7 +346,7 @@ nv.addGraph(function() {
 // Leaflet Code
 // Create the map variable
 				
-var map = L.map('map').setView([34.980061, -78.919841], 3);
+var map = L.map('map', { zoomControl:false }).setView([34.980061, -78.919841], 3);
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 	maxZoom: 6.45,
@@ -194,6 +382,16 @@ var geojson = L.geoJson(pElec16, {style: style}).addTo(map);
 console.log(geojson.getLayers().length);
 console.log(pElec16.features.length);
 
+// add colors to each county
+	function getColor(d) {
+  	return d > 40 ? '#3c7cc6' :
+      d > 20 ? '#81a8d9' :
+      d > 0 ? '#c0d4e9' :
+      d > -20 ? '#e5c3c3' :
+      d > -40 ? '#d48c8b' :
+           '#b51f1d' ;
+}
+
 // hover and color characteristics				
 
 function style(feature) {
@@ -203,32 +401,25 @@ function style(feature) {
 		opacity: .5,
 		color: '#eeeeee',
 		fillOpacity: 1
-	}
-}; 
-
-// control the fill of each county 
-
-function getColor(d) {
-	return d > 30 ? '#3c7cc6' :
-	d > 15 ? '#81a8d9' :
-	d > 0 ? '#c0d4e9' :
-	d > -15 ? '#e5c3c3' :
-	d > -30 ? '#d48c8b' :
-	          '#b51f1d' ;
+	};
 }
 
+L.geoJson(pElec16, {style: style}).addTo(map); 
+
 function highlightFeature(e) {
-	var layer = e.target;
+  var layer = e.target;
+
   layer.setStyle({
 		weight: 5,
 		color: '#000',
 		dashArray: '',
+		opacity: .5,
 		fillOpacity: 1.5
   });
 				
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
 	  layer.bringToFront();
-  };
+  }
 
   info.update(layer.feature.properties);
 }
@@ -288,7 +479,7 @@ var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
 
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [-60, -30, -15, 0, 15, 30],
+    grades = [-60, -40, -20, 0, 20, 40],
     labels = ["Margin of Victory (pts)"],
     from, to;
 
@@ -305,18 +496,18 @@ legend.onAdd = function (map) {
     }
 
   // create the llabel field for the legend
-  if (grades[i] < -30) {
-      llabel = '(30+)'
-    }	else if (grades[i] < -15) {
-      llabel = '(15-30)'
+  if (grades[i] < -40) {
+      llabel = '(40+)'
+    }	else if (grades[i] < -20) {
+      llabel = '(20-40)'
     }	else if (grades[i] < 0) {
-      llabel = '(0-15)'
-    }	else if (grades[i] > 30) {
-      llabel = '(0-15)'
-    }	else if (grades[i] > 15) {
-      llabel = '(30+)'
+      llabel = '(0-20)'
+    }	else if (grades[i] > 40) {
+      llabel = '(0-20)'
+    }	else if (grades[i] > 20) {
+      llabel = '(40+)'
     }	else if (grades[i] > 0) {
-      llabel = '(15-30)'
+      llabel = '(20-40)'
     }
 
   // create the labels
@@ -330,191 +521,6 @@ legend.onAdd = function (map) {
 
 legend.addTo(map);
 
-</script>
-
-<br>
-          </div>
-        </div>
-      </div>
-    </section>
-
-<hr />
-
-<!-- 2000 Presidential Section -->
-  
-    <section id="elections" class="elections-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 style="padding-top: 2em; margin-bottom: 10px">2000 Presidential Election</h2>
-            <h6 style="font-family: Work Sans, Helvetica; font-weight: 300; margin-top: 0px; margin-bottom: 15px">George W. Bush* (R) & Al Gore (D)</h6>
-			     
-          <div id='map2'></div>
-          <br><br>
-          <p><b>2000 Total Landslide Counties</b>: 30<br><b>2000 Republican Landslide Counties</b>: 26<br><b>2000 Democratic Landslide Counties</b>: 4
-          </p>
-
-          <p style="text-align: left">While the total number of landslide counties as well as the Republican-won landslide counties increased by a third, the number of Democratic counties hardly budged. <br><br>Such a trend could be explained by any number of forces: collective movement to the right on the part of the Republican party, a shift of Democratic voters out of traditionally conservative areas to urban cores (which are perhaps not coincidentally Democratic strongholds), successful efforts to get out the Republican vote, or successful efforts to stifle the Democratic vote in the state (check out what the Atlantic has to say on that <a href="https://www.theatlantic.com/politics/archive/2016/11/north-carolina-early-voting/506963/" target="_blank">here</a>).<br><br>
-          </p>
-
-<script type="text/javascript">
-
-// Leaflet Code Map 2
-// Create second map variable 
-var map2 = L.map('map2').setView([34.980061, -78.919841], 3);
-
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-	maxZoom: 6.45,
-	minZoom: 6.45,
-	zoomSnap: 1,
-	attribution: 'Map data from <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="_blank">U.S. Census Bureau</a> + ' + '<a href="https://www.american.edu/spa/ccps/data-sets.cfm" target="_blank">AU School of Public Affairs</a>' ,
-	id: 'mapbox.dark'
-}).addTo(map2);
-console.log("map loaded")
-
-// control that shows state info on hover
-var info2 = L.control();
-
-info2.onAdd = function(map2) {
-	this._div = L.DomUtil.create('div', 'info2');
-	this.update();
-	return this._div; 
-}
-console.log("info function one added")
-
-
-// Election results + margin of victory
-info2.update = function(props) {
-	this._div.innerHTML = '<h4>Results</h4>' + (props ? '<h3>' + props.NAME + ' County</h3><br>' + '<h6>Gore: ' + props.demp2000 + '%<br>' + 'Bush: ' + props.gopp2000 + '%<br>' + 'Margin: ' + Math.abs(props.movp2000) + ' pts</h6>'
-	:'<br><h5>Hover over a county</h5>');
-};
-
-info2.addTo(map2);
-
-// second geojson file
-var geojson2 = L.geoJson(pElec00, {style: style}).addTo(map2);
-console.log(geojson2.getLayers().length);
-console.log(pElec00.features.length);
-				
-function style(feature) {
-	return {
-	fillColor: getColor(feature.properties.movp2000),
-	weight: 1.5,
-	opacity: .5,
-	color: '#eeeeee',
-	fillOpacity: 1
-	}
-}; 
-
-// add colors to each county
-	function getColor(d) {
-  	return d > 30 ? '#3c7cc6' :
-      d > 15 ? '#81a8d9' :
-      d > 0 ? '#c0d4e9' :
-      d > -15 ? '#e5c3c3' :
-      d > -30 ? '#d48c8b' :
-           '#b51f1d' ;
-}
-
-// control hover features / colors 
-function highlightFeature(e) {
-	var layer = e.target;
-	layer.setStyle({
-		weight: 5,
-		color: '#000',
-		dashArray: '',
-		fillOpacity: 1.5
-	});
-				
-	if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-			layer.bringToFront();
-	};
-
-info2.update(layer.feature.properties);
-}
-
-function resetHighlight(e) {
-	geojson2.resetStyle(e.target);
-}
-
-console.log(highlightFeature)
-
-function onEachFeature(feature, layer) {
-	layer.on({
-		mouseover: highlightFeature,
-		mouseout: resetHighlight
-	});
-}
-
-var geojson2 = L.geoJson(pElec00, {
-	style: style,
-	onEachFeature: onEachFeature
-}).addTo(map2);
-
-// add points to the map (cities)
-var point = new icon({iconUrl: 'img/dot-circle.svg'});
-  L.marker([35.2271, -80.8431], {icon: point})
-  	.bindTooltip("Charlotte")
-   	.openTooltip(map2)
-   	.addTo(map2);
-  L.marker([35.796, -78.6382], {icon: point})
-   	.bindTooltip("Raleigh")
-   	.openTooltip(map2)
-   	.addTo(map2);
-  L.marker([35.5951, -82.5515], {icon: point})
-   	.bindTooltip("Asheville")
-  	.openTooltip(map2)
-  	.addTo(map2);
-  L.marker([36.0726, -79.7920], {icon: point})
-  	.bindTooltip("Greensboro")
-  	.openTooltip(map)
-  	.addTo(map);
-
-// legend controls 
-var legend = L.control({position: 'bottomright'});
-
-legend.onAdd = function (map) {
-
-  var div = L.DomUtil.create('div', 'info legend'),
-    grades = [-60, -30, -15, 0, 15, 30],
-    labels = ["<b>Margin of Victory (pts)</b>"],
-  from, to;
-  
-  // create the llabel variable for the legend
-  for (var i = 0; i < grades.length; i++) {
-    from = grades[i];
-    to = grades[i + 1];
-            
-  if(grades[i] < 0) {
-    party = 'GOP'
-  } else {
-    party = 'Dem'
-  }
-
-  if (grades[i] < -30) {
-  	llabel = '(30+)'
-  }	else if (grades[i] < -15) {
-  	llabel = '(15-30)'
-  }	else if (grades[i] < 0) {
-  	llabel = '(0-15)'
-  }	else if (grades[i] > 30) {
-  	llabel = '(0-15)'
-  }	else if (grades[i] > 15) {
-  	llabel = '(30+)'
-  }	else if (grades[i] > 0) {
-  	llabel = '(15-30)'
-  }
-
-labels.push(
-  '<i style="background:' + getColor(from + 1) + '"></i>'+ party + ' ' + llabel);
-
-  }
-
-div.innerHTML = labels.join('<br>');
-return div;
-};
-
-legend.addTo(map2);
 </script>
 
 
