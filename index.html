@@ -90,7 +90,7 @@
       </div>
     </header>
 
-    <!-- 2016 Election Section -->
+    <!-- 2000 Election Section -->
     <section id="elections" class="elections-section text-center">
       <div class="container">
         <div class="row">
@@ -121,7 +121,9 @@
           <p style="text-align: left">While the total number of landslide counties as well as the Republican-won landslide counties increased by a third, the number of Democratic counties hardly budged. <br><br>Such a trend could be explained by any number of forces: collective movement to the right on the part of the Republican party, a shift of Democratic voters out of traditionally conservative areas to urban cores (which are perhaps not coincidentally Democratic strongholds), successful efforts to get out the Republican vote, or successful efforts to stifle the Democratic vote in the state (check out what the Atlantic has to say on that <a href="https://www.theatlantic.com/politics/archive/2016/11/north-carolina-early-voting/506963/" target="_blank">here</a>).<br><br>
           </p>
 
+<script type="text/javascript" src="json/nc_2000p.geojson"></script>
 <script type="text/javascript">
+
 
 // Leaflet Code Map 2
 // Create second map variable 
@@ -157,9 +159,7 @@ info2.addTo(map2);
 
 // second geojson file
 
-var geojson2 = L.geoJson(Elec00, {
-	style: style
-}).addTo(map2);
+var geojson2 = L.geoJson(Elec00, {style: style}).addTo(map2);
 console.log(geojson2.getLayers().length);
 console.log(Elec00.features.length);
 				
@@ -218,6 +218,14 @@ var geojson2 = L.geoJson(Elec00, {
 	onEachFeature: onEachFeature
 }).addTo(map2);
 
+var icon = L.Icon.extend({
+  options: {
+    iconSize:     [10, 10],
+    iconAnchor:   [5, 5],
+    popupAnchor:  [0, 0]
+  }
+});
+
 // add points to the map (cities)
 var point = new icon({iconUrl: 'img/dot-circle.svg'});
   L.marker([35.2271, -80.8431], {icon: point})
@@ -234,8 +242,8 @@ var point = new icon({iconUrl: 'img/dot-circle.svg'});
   	.addTo(map2);
   L.marker([36.0726, -79.7920], {icon: point})
   	.bindTooltip("Greensboro")
-  	.openTooltip(map)
-  	.addTo(map);
+  	.openTooltip(map2)
+  	.addTo(map2);
 
 // legend controls 
 var legend = L.control({position: 'bottomright'});
@@ -269,7 +277,7 @@ legend.onAdd = function (map) {
   }	else if (grades[i] > 20) {
   	llabel = '(40+)'
   }	else if (grades[i] > 0) {
-  	llabel = '(20-30)'
+  	llabel = '(20-40)'
   }
 
 labels.push(
@@ -339,7 +347,6 @@ nv.addGraph(function() {
 </style>
 
 <script type="text/javascript" src="json/nc_2016p_2.geojson"></script>
-<script type="text/javascript" src="json/nc_2000p.geojson"></script>
 <script type="text/javascript">
 
 
