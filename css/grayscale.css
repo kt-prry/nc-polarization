@@ -281,3 +281,24 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
+#charts {
+  width: 100%;
+  display: block;
+}
+
+#pie2016 {
+  width: 48%;
+  float: left;
+  height: 800px; 
+  margin: 0 auto;
+  display: inline-block;
+}
+
+#pie2000 {
+  width: 48%;
+  float: left;
+  height: 200px; 
+  margin: 0 auto;
+  display: inline-block;
+}
