@@ -195,7 +195,7 @@ a:focus, a:hover {
 }
 
 #map {
-  width: 100%;
+  width: 1024px;
   height: 300px;
 }
 
@@ -282,23 +282,20 @@ img::-moz-selection {
   background: transparent;
 }
 
-#charts {
-  width: 100%;
-  display: block;
-}
-
 #pie2016 {
-  width: 48%;
-  float: left;
-  height: 800px; 
+  height: 200px; 
   margin: 0 auto;
-  display: inline-block;
 }
 
 #pie2000 {
-  width: 48%;
-  float: left;
   height: 200px; 
   margin: 0 auto;
-  display: inline-block;
+}
+
+.info2.leaflet-control h4 {
+  font-size: .5em;
+}
+
+#legend {
+  margin-top: .25em;
 }

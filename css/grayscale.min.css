@@ -47,6 +47,7 @@ h1,h2,h3,h4,h5,h6 {
 	text-align: left;
 	line-height: 24px;
 	color #555;
+	width: 115px;
 }
 
 .legend i {
@@ -67,12 +68,14 @@ h1,h2,h3,h4,h5,h6 {
 
 				.info {
 					padding: 6px 8px;
-					font: 1em Work Sans, Helvetica, sans-serif;
+					font: .75em Work Sans, Helvetica, sans-serif;
 					background: white;
 					background: rgba(255,255,255,1);
 					box-shadow: 0 0 15px rgba(0,0,0,.2);
 					border-radius: 5px;
 					color: #333;
+					margin-top: 1em;
+					width: 150px;
 				}
 
 .info h5 {
@@ -112,12 +115,13 @@ h1,h2,h3,h4,h5,h6 {
 
 				.info2 {
 					padding: 6px 8px;
-					font: 1em Work Sans, Helvetica, sans-serif;
+					font: .75em Work Sans, Helvetica, sans-serif;
 					background: white;
 					background: rgba(255,255,255,1);
 					box-shadow: 0 0 15px rgba(0,0,0,.2);
 					border-radius: 5px;
 					color: #333;
+					width: 150px;
 				}
 
 .info2 h5 {
@@ -418,10 +422,9 @@ img::-moz-selection {
 	background:0 0
 }
 
-
-
-
-
+.pie2000 {
+	width: 100%;
+}
 
 
 
