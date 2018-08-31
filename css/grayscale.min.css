@@ -288,6 +288,28 @@ a:focus,a:hover {
 
 }
 
+@media (max-width: 414px) {
+	#map2 {
+		display: none;
+	}
+
+	#map {
+		display: none;
+	}
+
+	#mapmed2 {
+		height: 200px;
+		margin-bottom: 15px;
+	}
+
+	#mapmed {
+		height: 200px;
+		margin-bottom: 15px;
+	}
+
+
+}
+
 @media (max-width:375px) {
 	.masthead {
 		height:100%;
@@ -306,7 +328,6 @@ a:focus,a:hover {
 	.section-title {
 		margin: 0 0;
 	}
-
 }
 
 @media (max-width:320px) {
