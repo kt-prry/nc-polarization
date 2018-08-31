@@ -264,16 +264,17 @@ a:focus,a:hover {
 }
 
 .masthead .intro-body .brand-heading {
-	font-size:4em
+	font-size:4.5em
 }
 
 .masthead .intro-body .intro-text {
 	font-size:18px
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
 	.masthead {
 		height:100%;
+		width: 100%;
 		padding:0
 	} 
 
@@ -287,7 +288,7 @@ a:focus,a:hover {
 
 }
 
-@media (min-width:320px) {
+@media (max-width:375px) {
 	.masthead {
 		height:100%;
 		width: 100%;
@@ -302,6 +303,32 @@ a:focus,a:hover {
 		font-size:22px
 	}
 
+	.section-title {
+		margin: 0 0;
+	}
+
+}
+
+@media (max-width:320px) {
+	.masthead {
+		height: 100%;
+		width: 100%;
+		padding-top: 35%;
+	} 
+
+	.masthead .intro-body .brand-heading {
+		font-size:3.5em
+	}
+
+	.masthead .intro-body .intro-text {
+		font-size:22px
+	}
+
+	.section-title {
+		margin-top: 15%;
+		margin-bottom: 5%;
+		padding: 5%;
+	}
 }
 
 .btn-circle {
@@ -447,11 +474,7 @@ h1 {
 	font-size: 3em;
 }
 
-@media (min-width:992px) {
-	h1 .brand-heading {
-		font-size: 3em;
-	}
-}
+
 
 
 
