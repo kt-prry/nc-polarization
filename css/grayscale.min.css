@@ -360,10 +360,6 @@ a:focus,a:hover {
 	.masthead .intro-body .intro-text {
 		font-size:22px
 	}
-
-	.section-title {
-		margin: 0 0;
-	}
 }
 
 @media (max-width:320px) {
