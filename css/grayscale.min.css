@@ -350,7 +350,7 @@ a:focus,a:hover {
 	.masthead {
 		height:100%;
 		width: 100%;
-		padding-top: 25%;
+		padding-top: 15%;
 	} 
 
 	.masthead .intro-body .brand-heading {
@@ -359,6 +359,10 @@ a:focus,a:hover {
 
 	.masthead .intro-body .intro-text {
 		font-size:22px
+	}
+
+	.section-title {
+		margin: 0 0;
 	}
 }
 
