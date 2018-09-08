@@ -260,7 +260,8 @@ a:focus,a:hover {
 
 .masthead .intro-body {
 	display:table-cell;
-	vertical-align:middle
+	vertical-align:middle;
+	width: 100%;
 }
 
 .masthead .intro-body .brand-heading {
@@ -286,6 +287,10 @@ a:focus,a:hover {
 		font-size:22px
 	}
 
+	h2 {
+		margin-top: 35px;
+	}
+
 }
 
 @media (max-width: 414px) {
@@ -307,6 +312,37 @@ a:focus,a:hover {
 		margin-bottom: 15px;
 	}
 
+	.navbar {
+		width: 100%
+	}
+
+	#mainNav {
+		width: 100%;
+	}
+
+	#mainNav .navbar-toggler {
+		position: absolute;
+		right: 11px;
+		top: 11px;
+	}
+
+	.masthead {
+		height:100%;
+		width: 100%;
+		padding-top: 25%;
+	} 
+
+	.masthead .intro-body .brand-heading {
+		font-size:3.5em
+	}
+
+	.masthead .intro-body .intro-text {
+		font-size:22px
+	}
+
+	.section-title {
+		margin-top: 35px;
+	}
 
 }
 
@@ -409,6 +445,15 @@ a:focus,a:hover {
 
 	#map2 { 
 		height:275px
+	}
+
+	.masthead {
+		width: 100%;
+		height: 100%;
+	}
+
+	.section-title h2 {
+		margin-top: 35px;
 	}
 }
 
