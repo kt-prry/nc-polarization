@@ -28,6 +28,10 @@ h1,h2,h3,h4,h5,h6 {
 	outline-color: : white;
 }
 
+.metrics-mob p {
+	display: none;
+}
+
 .leaflet-popup-content-wrapper .leaflet-popup-content {
 	opacity: 1;
 	max-height: 30px;
@@ -122,6 +126,7 @@ h1,h2,h3,h4,h5,h6 {
 					border-radius: 5px;
 					color: #333;
 					width: 150px;
+					margin-top: 2em;
 				}
 
 .info2 h5 {
@@ -162,6 +167,15 @@ p {
 		font-size:18px;
 		line-height:1.6;
 		margin:0 0 35px
+	}
+
+	.data {
+		display: none;
+	}
+
+	.desk-margin {
+		margin-top: 3em;
+		margin-bottom: 3em;
 	}
 }
 
@@ -272,6 +286,7 @@ a:focus,a:hover {
 	font-size:18px
 }
 
+
 @media (max-width:768px) {
 	.masthead {
 		height:100%;
@@ -292,6 +307,7 @@ a:focus,a:hover {
 	}
 
 }
+
 
 @media (max-width: 414px) {
 	#map2 {
@@ -342,6 +358,41 @@ a:focus,a:hover {
 
 	.section-title {
 		margin-top: 35px;
+	}
+
+	.info {
+		margin-right: 15px;
+		margin-bottom: 0px;
+	}
+
+	.metrics-desk {
+		display: none;
+	}
+
+	.negmargin {
+		margin-top: -65px;
+	}
+
+	.info2 {
+		margin-right: 15px;
+		display: none
+	}
+
+	.metrics-mob p {
+		display: inline;
+		border: 2px #444 solid;
+		width: 100%;
+		padding: 5px;
+	}
+
+	.data p {
+		padding: 10px;
+		border-radius: 8px;
+		box-shadow: 0 0 15px rgba(0,0,0,.2);
+	}
+
+	.desk-margin {
+		margin-top: 0;
 	}
 
 }
@@ -455,6 +506,7 @@ a:focus,a:hover {
 	.section-title h2 {
 		margin-top: 35px;
 	}
+
 }
 
 .btn {

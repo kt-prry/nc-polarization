@@ -114,10 +114,13 @@
           <div id="info_container2"></div>
           <div id="legend_container2"></div>
           <br></br>
-          <p><b>2000 Total Traditional Landslide Counties</b>: 51<br>(40 Republican wins, 11 Democratic wins)<br><br><b>2000 Total Mega-Landslide Counties</b>: 6<br>(all Republican wins)
+          <p class="metrics-desk"><b>2000 Total Traditional Landslide Counties</b>: 51<br>(40 Republican wins, 11 Democratic wins)<br><br><b>2000 Total Mega-Landslide Counties</b>: 6<br>(all Republican wins)
           </p><br>
 
-          <p style="text-align: left">A helpful metric for considering polarization is the landslide victory, which is defined by Bill Bishop in his book <em>The Big Sort</em> as an election where one candidate wins by more than 20 points (FiveThirtyEight also <a href="https://fivethirtyeight.com/features/purple-america-has-all-but-disappeared/" target="_blank">considers</a> elections with margins higher than 20 points to be a landslide.)</p>
+          <p style="text-align: left" class="negmargin">A helpful metric for considering polarization is the landslide victory, which is defined by Bill Bishop in his book <em>The Big Sort</em> as an election where one candidate wins by more than 20 points (FiveThirtyEight also <a href="https://fivethirtyeight.com/features/purple-america-has-all-but-disappeared/" target="_blank">considers</a> elections with margins higher than 20 points to be a landslide.)</p>
+
+          <span class="data"><p class="metrics-mob"><b>2000 Total Traditional Landslide Counties</b>: 51<br>(40 Republican wins, 11 Democratic wins)<br><br><b>2000 Total Mega-Landslide Counties</b>: 6<br>(all Republican wins)
+          </p><br></span>
 
 		<p style="text-align: left">The problem with such a definition, however, is that it conceals the heterogeneity of landslide counties. While some margins sit just above 20 points, others soar beyond 60 (a point also highlighted by the above FiveThirtyEight <a href="https://fivethirtyeight.com/features/purple-america-has-all-but-disappeared/" target="_blank">piece</a>). </p>	
 
@@ -450,17 +453,24 @@ setParent(htmlObjectL, b);
             <br><br>
             	
             
-            <div><p><b>2016 Total Traditional Landslide Counties</b>: 63<br>(52 Republican wins, 11 Democratic wins)<br><br><b>2016 Total Mega-Landslide Counties</b>: 26<br>(24 Republican wins, 2 Democratic wins)
+            <div><p class="metrics-desk"><b>2016 Total Traditional Landslide Counties</b>: 63<br>(52 Republican wins, 11 Democratic wins)<br><br><b>2016 Total Mega-Landslide Counties</b>: 26<br>(24 Republican wins, 2 Democratic wins)
             </p></div>
 
-            <div id="pie2016" style="width: 100%"></div>
+            
 
-            <br><p style="text-align: left">From 2000 to 2016, the total number of landslide counties jumped from 51 to 63, resulting in an increase of approximately 20%. More notably, the number of mega-landslide counties leapt 433%, from 6 to 26, and heavily favor the Republican candidate (this trend is clearly demonstrated in the graphic below). Nearly 83% of all the landslide counties (traditional and mega-landslides) were won by Donald Trump, and an overwhelming majority of mega-landslides were red as well (92%). </p>
+            <br><p style="text-align: left" class="negmargin">From 2000 to 2016, the total number of landslide counties jumped from 51 to 63, resulting in an increase of approximately 20%. More notably, the number of mega-landslide counties leapt 433%, from 6 to 26, and heavily favor the Republican candidate (this trend is clearly demonstrated in the graphic below). Nearly 83% of all the landslide counties (traditional and mega-landslides) were won by Donald Trump, and an overwhelming majority of mega-landslides were red as well (92%). </p>
+
+            <span class="data"><p class="metrics-mob"><b>2000 Total Traditional Landslide Counties</b>: 51<br>(40 Republican wins, 11 Democratic wins)<br><br><b>2000 Total Mega-Landslide Counties</b>: 6<br>(all Republican wins)
+          </p></span>
+
+          <div id="pie2016" style="width: 100%"></div>
+
+            
+
+            <p style="text-align: left" class="desk-margin">Such a trend could be explained by any number of forces: collective movement to the right on the part of the Republican party, a shift of Democratic voters out of traditionally conservative areas to urban cores (which are perhaps not coincidentally Democratic strongholds), successful efforts to get out the Republican vote, or successful efforts to stifle the Democratic vote in the state (check out what the Atlantic has to say on that <a href="https://www.theatlantic.com/politics/archive/2016/11/north-carolina-early-voting/506963/" target="_blank">here</a>). 
+            </p>
 
             <div id="stackedbar"></div><br>
-
-            <p style="text-align: left">Such a trend could be explained by any number of forces: collective movement to the right on the part of the Republican party, a shift of Democratic voters out of traditionally conservative areas to urban cores (which are perhaps not coincidentally Democratic strongholds), successful efforts to get out the Republican vote, or successful efforts to stifle the Democratic vote in the state (check out what the Atlantic has to say on that <a href="https://www.theatlantic.com/politics/archive/2016/11/north-carolina-early-voting/506963/" target="_blank">here</a>). 
-            </p>
 
             <p style="text-align: left">Also of interest is the distribution of people among those counties, and simply showing the election results betrays another layer of complexity. In the chart below, you'll find the percentage of the total population of each county (based on July 2015 <a href="https://files.nc.gov/ncosbm/demog/countygrowth_2015.html" target="_blank">estimates</a>) in the state of North Carolina compared to the proportion of each county type. For example, Democratic Mega-Landslide counties comprised only 2% of North Carolina's counties, but those counties hold 4.35% of the state's total population. It's evident then that despite few Democratic county-level victories, Democratic counties tend to be more vote rich and represent more constituents than their Republican counterparts.</p><br>
 
@@ -532,7 +542,7 @@ var pie2016 = new Highcharts.chart({
             cursor: 'pointer',
             dataLabels: {
                 enabled: true,
-                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                format: '<b>{point.name}</b>: {point.percentage:.1f}%',
                 // style: {
                 //     color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                 // }
@@ -599,7 +609,7 @@ var pie2000 = new Highcharts.chart({
             cursor: 'pointer',
             dataLabels: {
                 enabled: true,
-                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                format: '<b>{point.name}</b>: {point.percentage:.1f}%',
                 // style: {
                 //     color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                 // }
