@@ -460,7 +460,7 @@ setParent(htmlObjectL, b);
 
             <br><p style="text-align: left" class="negmargin">From 2000 to 2016, the total number of landslide counties jumped from 51 to 63, resulting in an increase of approximately 20%. More notably, the number of mega-landslide counties leapt 433%, from 6 to 26, and heavily favor the Republican candidate (this trend is clearly demonstrated in the graphic below). Nearly 83% of all the landslide counties (traditional and mega-landslides) were won by Donald Trump, and an overwhelming majority of mega-landslides were red as well (92%). </p>
 
-            <span class="data"><p class="metrics-mob"><b>2000 Total Traditional Landslide Counties</b>: 51<br>(40 Republican wins, 11 Democratic wins)<br><br><b>2000 Total Mega-Landslide Counties</b>: 6<br>(all Republican wins)
+            <span class="data"><p class="metrics-mob"><b>2016 Total Traditional Landslide Counties</b>: 63<br>(52 Republican wins, 11 Democratic wins)<br><br><b>2000 Total Mega-Landslide Counties</b>: 26<br>(24 Republican wins, 2 Democratic wins)
           </p></span>
 
           <div id="pie2016" style="width: 100%"></div>
@@ -543,6 +543,8 @@ var pie2016 = new Highcharts.chart({
             dataLabels: {
                 enabled: true,
                 format: '<b>{point.name}</b>: {point.percentage:.1f}%',
+                distance: 5,
+                overflow: "justify"
                 // style: {
                 //     color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                 // }
@@ -576,7 +578,18 @@ var pie2016 = new Highcharts.chart({
             y: 2,
             color: electionColors[0]
         }]
-    }]
+    }],
+    exporting: {
+        enabled: false
+    },
+    navigation: {
+        buttonOptions: {
+            enabled: false
+        }
+    },
+    credits: {
+        enabled: false
+    }
 });
 
 var pie2000 = new Highcharts.chart({
@@ -606,10 +619,13 @@ var pie2000 = new Highcharts.chart({
     plotOptions: {
         pie: {
             allowPointSelect: true,
+            size: '65%',
             cursor: 'pointer',
             dataLabels: {
                 enabled: true,
                 format: '<b>{point.name}</b>: {point.percentage:.1f}%',
+                distance: 5,
+                overflow: "justify"
                 // style: {
                 //     color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                 // }
@@ -639,7 +655,18 @@ var pie2000 = new Highcharts.chart({
             y: 11,
             color: electionColors[1]
         }]
-    }]
+    }],
+    exporting: {
+        enabled: false
+    },
+    navigation: {
+        buttonOptions: {
+            enabled: false
+        }
+    },
+    credits: {
+        enabled: false
+    }
 });
 
 var stackedbar = new Highcharts.chart({
@@ -656,7 +683,10 @@ var stackedbar = new Highcharts.chart({
         spacingTop: 0,
         marginTop: 75,
         marginBottom: 75,
-        height: 350,
+        height: 400,
+        credits:{
+          enabled: false,
+        }
     },
         title: {
         text: 'Breakdown of Presidential Electoral Results'
@@ -681,13 +711,16 @@ var stackedbar = new Highcharts.chart({
     legend: {
         align: 'right',
         x: -30,
-        verticalAlign: 'top',
-        y: 25,
-        floating: true,
+        verticalAlign: 'bottom',
+        y: 0,
+        floating: false,
         backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
         borderColor: '#fff',
         borderWidth: 1,
         shadow: false
+    },
+    credits: {
+        enabled: false
     },
     tooltip: {
         headerFormat: '<b>{point.x}</b><br/>',
@@ -726,7 +759,15 @@ var stackedbar = new Highcharts.chart({
         name: 'Competitive Dem',
         data: [14, 13, 22, 19, 13],
         color: electionColors[2]
-    }]
+    }],
+    exporting: {
+        enabled: false
+    },
+    navigation: {
+        buttonOptions: {
+            enabled: false
+        }
+    }
   });
 
 var stackedarea = new Highcharts.chart({
@@ -759,7 +800,7 @@ var stackedarea = new Highcharts.chart({
         }
     },
     tooltip: {
-        valueSuffix: ' %'
+        valueSuffix: '%'
     },
     plotOptions: {
         bar: {
@@ -790,7 +831,18 @@ var stackedarea = new Highcharts.chart({
         name: '% of Statewide Population',
         data: [15.58, 25.28, 12.06, 20.05, 22.68, 4.35],
         color: '#05668D'
-    }]
+    }],
+    exporting: {
+        enabled: false
+    },
+    navigation: {
+        buttonOptions: {
+            enabled: false
+        }
+    },
+    credits: {
+        enabled: false
+    }
 });
 
 // Leaflet Code
