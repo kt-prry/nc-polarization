@@ -15,7 +15,7 @@ html {
 h1,h2,h3,h4,h5,h6 {
 	font-family:Playfair Display,'Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-weight:700;
-	margin:0 0 35px;
+	margin:35px 0 35px 0;
 	letter-spacing:1px;
 	text-transform:none
 }
@@ -357,6 +357,10 @@ a:focus,a:hover {
 	}
 
 	.section-title {
+		margin-top: 35px;
+	}
+
+	.section-title h2 {
 		margin-top: 35px;
 	}
 
