@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130110707-1"></script>
@@ -29,6 +29,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Work+Sans:300|Work+Sans:500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/qfp7juj.css">
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
@@ -48,16 +49,19 @@
 	<script src="https://code.highcharts.com/modules/exporting.js"></script>
 	<script src="https://code.highcharts.com/modules/export-data.js"></script>
 
+	<!-- reference to Google Charts -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     <!-- reference to label plugin -->
     <link href="leaflet_label/Leaflet.label-0.8">
 
 
-  </head>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
 
 
-    <!-- Navigation -->
+<!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
@@ -67,28 +71,31 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#elections">Elections</a>
+              <a class="nav-link js-scroll-trigger" href="#elections">Background</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#data">Sources</a>
+              <a class="nav-link js-scroll-trigger" href="#elections">Research</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#conclusions">Conclusions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#info">Info</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Intro Header -->
+<!-- Intro Header -->
     <header class="masthead">
       <div class="intro-body">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <h1 class="brand-heading">North Carolina's Polarization Problem</h1>
-              <h2 style="font-family: Work Sans, Helvetica; font-weight: 300">and its evolution through time</h2>
-              <a href="#elections" class="btn btn-circle js-scroll-trigger">
+              <h2 style="font-family: Europa, Work Sans, Helvetica; font-weight: 300">Mega-landslides, Migrants, & More.</h2>
+              <a href="#intro" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
               </a>
             </div>
@@ -97,352 +104,503 @@
       </div>
     </header>
 
-    <!-- 2000 Election Section -->
-    <section id="elections" class="elections-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-			      <h2 class="section-title">American Political Polarization</h2>
-              <h6 style="font-family: Work Sans, Helvetica; font-weight: 300; margin-top: 0px; margin-bottom: 15px">Considering Space</h6>
-            
-                <p style="text-align: left"><br><br>By all accounts, the United States is dealing with an increasingly vitriolic, polarized political system. Political polarization has grabbed the attention of media outlets across the political spectrum: <em>Vox.com</em> ran a <a href="https://www.vox.com/the-big-idea/2017/9/5/16227700/hyperpartisanship-identity-american-democracy-problems-solutions-doom-loop target="_blank"">headline</a> in September 2017 warning that “rabid partisanship could destroy American democracy” while  <em>Breitbart</em> <a href=http://www.breitbart.com/big-government/2017/12/21/poll-documents-polarization-country-two-opposing-world-views/ target="_blank">reported</a> that a “poll document[ed] polarization of country into two opposing world views.” <br><br>
+<!-- Intro Section -->
+    <section id="intro" class="elections-section text-center">
+      	<div class="container">
+        	<div class="row">
+          		<div class="col-lg-8 mx-auto">
+			    	<h2 class="section-title">
+			    		"The complete freedom to move &mdash; highly valued in free societies &mdash; is the freedom to segregate."
+			    	</h2>
+			    
+			    	<h6 style="text-align: center; font-family: Europa, Work Sans; font-weight: 400">
+			    		Ryan Enos, <em>The Space Between Us</em>, 2017
+			    	</h6>
 
-                Perhaps to no one’s surprise, Pew Research Center <a href="http://www.people-press.org/2017/10/05/the-partisan-divide-on-political-values-grows-even-wider/." target="_blank">found</a> that since 1994, the partisan gap between Democrats and Republicans nationwide has jumped from 15 points to 36 points, a record high since the survey was first conducted.
-			          <br><br>
+				      <p style="text-align: left">
+				      	I began thinking about this project in early 2016, long before anyone thought it possible for Donald Trump to be president. After I and many friends left Mississippi post-college seeking opportunities around the broader Southeast and United States (and recognizing the impact of college education on partisanship), it occurred to me that every time a Democratic voter moved to some urban center (likely a Democratic one), Mississippi would be left with one fewer blue vote, and thus, a little more conservative. The exodus of educated, young people, commonly referred to as "brain drain," is not limited to Mississippi: young people across the United States flock to urban centers in search of better job opportunities, communities that share their values, and sometimes their very safety. So what would it mean for the American electoral landscape if such a pattern drew like-minded people to the same places, who then are likely to vote similarly?
+				      </p>
 
-			          Investigations such as the surveys undertaken by Pew Research Center provide valuable data that assess the attitude of the electorate, but offer only a bird’s eye view of American politics by privileging reported attitudes and non-spatial statistics over outcomes of elections and smaller-scale spatial data. <br><br>
+				      <p style="text-align: left">
+				      	Taking a largely data-driven approach, I focused on the state of North Carolina and worked to answer three questions. <b>How has the political landscape in North Carolina changed over the last five presidential elections? What are the general patterns of internal migration in recent years within the state of North Carolina? And finally, does the data point to a discernible relationship between them?</b>
+				      </p>
 
-			          Taking a more geographic approach, John Agnew and Luca Muscará (two political geographers) assert that, <b>“not only is American politics increasingly polarized ideologically, but the country itself is increasingly geographically polarized politically, albeit not at the state level of sections or macroregions, but at the scale of counties, suburbs, and municipalities.”</b><br><br>
+				      <p style="text-align: left">
+				      	Feel free to explore the parts of this project that interest you most. I've provided a bit of background to situate the research, as well as the results of the electoral and migratory analysis (with a bunch of fun maps and data visualizations 😍). Reach out to me at <a href="mailto:katip@uoregon.edu?Subject=Political%20polarization%20in%20North%20Carolina" target="_top">katip@uoregon.edu</a> for feedback, questions, or any code I used for the analysis.
+				      </p>
 
-                Let's take a look two elections in North Carolina &ndash; the 2000 and 2016 presidential elections &ndash; to examine the evolution of spatial-political polarization in the state. 
-			          </p>
+				      <br>
+				      <br>
 
-            <h2 style="padding-top: 2em; margin-bottom: 10px">2000 Presidential Election</h2>
-            <h6 style="font-family: Work Sans, Helvetica; font-weight: 300; margin-top: 0px; margin-bottom: 15px">George W. Bush* (R) & Al Gore (D)</h6>
+				      <a href="#background" class="js-scroll-trigger">
+				      	<button type="button" class="btn btn-primary shadow-sm bg-white rounded" style="margin: 1% 1.5%; color: black; background: white; border-color: black">Background</button>
+				      </a>
+
+				      <a href="#elections" class="js-scroll-trigger">
+				      	<button type="button" class="btn btn-primary shadow-sm bg-white rounded" style="margin: 1% 1.5%; color: black; background: white; border-color: black">Elections</button>
+				      </a>
+
+				      <a href="#migration" class="js-scroll-trigger">
+				      	<button type="button" class="btn btn-primary shadow-sm bg-white rounded" style="margin: 1% 1.5%; color: black; background: white; border-color: black">Migration</button>
+				      </a>
+
+				      <a href="#conclusions" class="js-scroll-trigger">
+				      	<button type="button" class="btn btn-primary shadow-sm bg-white rounded" style="margin: 1% 1.5%; color: black; background: white; border-color: black">Conclusions</button>
+				      </a>
+
+				      <br>
+				      <br>
+				      <br>
+				      <br>
+				      <br>
+				      <br>
+
+				      <hr />
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Background Section -->
+    <section id="background" style="padding-top: 2em; margin-bottom: 10px" class="elections-section text-center">
+      	<div class="container">
+        	<div class="row">
+          		<div class="col-lg-8 mx-auto">
+			    	<h2 class="section-title">
+			    		Background
+			    	</h2>
+			    
+			    	<h5 style="text-align: center; font-family: Europa, Work Sans; font-weight: 400">
+			    		Considering space, job markets, and elections. 
+			    	</h5>
+						
+		              <img src="img/population_change.png" alt="Population change in the United States from 1970 to 2017, which shows absolute population loss in non-metro counties for six consecutive years from 2010 to 2016" style="width: 50%; float: left; padding-right: 3%; padding-top: 1%;">
+
+		              <p style="text-align: left">
+		              	There is no shortage of reports showcasing the economic and population losses of rural America. Just months before Donald J. Trump was elected president, <em>The Atlantic</em> <a href="https://www.theatlantic.com/business/archive/2016/06/the-graying-of-rural-america/485159/" target="_blank">published</a> yet another story recounting a familiar tale of a rural American-West city. Fossil, Oregon was struggling to retain its youth, opportunities, and economic vigor, and the trend is not specific to any one region. <em>Rethink Mississippi</em>, an online publication offering critical analysis of issues facing today’s Mississippi, <a href="http://www.rethinkms.org/2017/12/21/new-census-data-ol-story-people-keep-leaving-mississippi/" target="_blank">lamented</a> the insistent outmigration from the state: “New Census data, same old story: People keep leaving Mississippi.” Meanwhile, <em>The New York Times</em> <a href="https://www.nytimes.com/interactive/2018/12/14/opinion/rural-america-trump-decline.html" target="_blank">published</a> a piece exploring the economic impact of the cluster economies that dominate the coasts and leave rural economies struggling.
+		              </p>
+
+		              <p style="text-align: left">
+		              	The proliferation of such stories validates recent <a href="https://www.ers.usda.gov/amber-waves/2017/september/rural-areas-show-overall-population-decline-and-shifting-regional-patterns-of-population-change/" target="_blank">findings</a> from the U.S. Department of Agriculture, which noted that rural America experienced its first year of absolute population decline in 2012, a trend that endured for six years before small population increases brought it to a close.
+		              </p>
+
+		              <p style="text-align: left">
+		              	The national conversation, which is dominated by voices largely outside of rural America, focuses on economics: where do people have the best opportunities to maximize their economic potential? Where are the most robust job markets? The privileging of the economic makes some sense, given that economic motivators are the primary reason people move.<sup><a href="#sources" class="js-scroll-trigger">1</a></sup>
+		              </p>
+
+		              <p style="text-align: left">
+		              	However, treating population change (and internal migration) as strictly economic issues overlooks a central piece of the equation: <b>when people move, they carry their votes with them</b>. Importantly, migration isn't random. Instead, as Ryan Enos notes, "the complete freedom to move &mdash; highly valued in free societies &mdash; is the freedom to segregate."<sup><a href="#sources" class="js-scroll-trigger">2</a></sup> Patterns of migration are products of mobility and access, which are themselves influenced by characteristics such as education and income. Those very same characteristics are deeply tied to political partisanship, meaning that internal migration has the potential to shape the American political landscape.
+		              </p> 
+
+		              <p style="text-align: left">
+		              	That's the subject of Bill Bishop's book, <em>The Big Sort</em>. He argues that migration trends between 1970 and 2008 are the products of people's desire to live among like-minded people, and he makes the case using landslide counties as a measure, which by his definition are counties where a candidate wins by more than 20 points (we'll come back to that definition later).  
+		              </p>
+
+		              <p style="text-align: left">
+		              	He emphasizes that the change is taking place at the neighborhood level, an idea that Agnew and Muscará support as well, writing that, "not only is American politics increasingly polarized ideologically, […] but the country itself is increasingly geographically polarized politically […] at the <b>scale of counties, suburbs, and municipalities</b>."<sup><a href="#sources" class="js-scroll-trigger">3</a></sup>
+		              </p>
+
+		              <p style="text-align: left">
+		              	Research undertaken by scholars such as Iris Hui, Wendy Tam Cho, James Gimpel, and others suggests that voter migration is real. If we are to seriously contend with the consequences of such a trend, we need to dive into the data. Let's first take a look two elections in North Carolina &ndash; the 2000 and 2016 presidential elections &ndash; to examine the evolution of spatial-political polarization in the state. 
+					  </p>
+
+					  <hr />
+					<!-- This is the end of the introductory text -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--This is the old text -->
+<span style="display: none">
+	              <h6 style="font-family: Work Sans, Helvetica; font-weight: 300; margin-top: 0px; margin-bottom: 15px">Considering Space</h6>
+	            
+	              	<br><br>
+	              	<img src="img/population_change.png" alt="Population change in the United States from 1970 to 2017, which shows absolute population loss in non-metro counties for six consecutive years from 2010 to 2016" style="width: 50%; float: left; padding-right: 3%; padding-top: 1%;">
+
+	              	<p style="text-align: left">There is no shortage of reports showcasing the economic and population losses of rural America. Just months before Donald J. Trump was elected president, <em>The Atlantic</em> <a href="https://www.theatlantic.com/business/archive/2016/06/the-graying-of-rural-america/485159/" target="_blank">published</a> yet another story recounting a familiar tale of a rural American-West city struggling to retain its youth, opportunities, and economic vigor, and the trend is not specific to any one region. <em>Rethink Mississippi</em>, an online publication offering critical analysis of issues facing today’s Mississippi, <a href="http://www.rethinkms.org/2017/12/21/new-census-data-ol-story-people-keep-leaving-mississippi/" target="_blank">lamented</a> the insistent outmigration from the state: “New Census data, same old story: People keep leaving Mississippi.” <em>The New York Times</em> <a href="https://www.nytimes.com/interactive/2018/12/14/opinion/rural-america-trump-decline.html" target="_blank">published</a> a piece exploring the economic impact of the cluster economies that dominate the coasts and leave rural economies struggling.</p>
+
+	              	<p style="text-align: left">The proliferation of such stories validates recent <a href="https://www.ers.usda.gov/amber-waves/2017/september/rural-areas-show-overall-population-decline-and-shifting-regional-patterns-of-population-change/" target="_blank">findings</a> from the U.S. Department of Agriculture, which noted that rural America experienced its first year of absolute population decline in 2012, a trend that endured for six years before small population increases brought it to a close.</p>
+
+	              	<!-- <img src="img/population_change.png" alt="Population change in the United States from 1970 to 2017, which shows absolute population loss in non-metro counties for six consecutive years from 2010 to 2016" style="width: 50%; float: left">
+
+	                <p style="text-align: left"><br><br>By all accounts, the United States is dealing with an increasingly vitriolic, polarized political system. Political polarization has grabbed the attention of media outlets across the political spectrum: <em>Vox.com</em> ran a <a href="https://www.vox.com/the-big-idea/2017/9/5/16227700/hyperpartisanship-identity-american-democracy-problems-solutions-doom-loop target="_blank"">headline</a> in September 2017 warning that “rabid partisanship could destroy American democracy” while  <em>Breitbart</em> <a href=http://www.breitbart.com/big-government/2017/12/21/poll-documents-polarization-country-two-opposing-world-views/ target="_blank">reported</a> that a “poll document[ed] polarization of country into two opposing world views.” <br><br> -->
+
+
+	                <p style="text-align: left">The national conversation, which is dominated by voices largely outside of rural America, focuses on the economic: where do people have the best opportunities to maximize their economic potential? Where are the most robust job markets? The privileging of the economic makes some sense, given that economic motivators are the primary reason people move. 
+	                </p>
+
+	                <p style="text-align: left">However, treating population change (and internal migration) as strictly an economic issue overlooks a central piece of the equation: when people move, they carry their votes with them. Importantly, migration isn't random. Rather, patterns of migration are products of mobility and access, which are in turn influenced by characteristics such as education and income. Those very same characteristics are deeply tied to political partisanship, meaning that internal migration has the potential to shape the American political landscape.</p> 
+
+	                <p style="text-align: left">
+	                	Perhaps to no one’s surprise, Pew Research Center <a href="http://www.people-press.org/2017/10/05/the-partisan-divide-on-political-values-grows-even-wider/." target="_blank">found</a> that since 1994, the partisan gap between Democrats and Republicans nationwide has jumped from 15 points to 36 points, a record high since the survey was first conducted.
+				          <br><br>
+
+				          Investigations such as the surveys undertaken by Pew Research Center provide valuable data that assess the attitude of the electorate, but offer only a bird’s eye view of American politics by privileging reported attitudes and non-spatial statistics over outcomes of elections and smaller-scale spatial data. <br><br>
+
+				          Taking a more geographic approach, John Agnew and Luca Muscará (two political geographers) assert that, <b>“not only is American politics increasingly polarized ideologically, but the country itself is increasingly geographically polarized politically, albeit not at the state level of sections or macroregions, but at the scale of counties, suburbs, and municipalities.”</b><br><br>
+
+	                Let's take a look two elections in North Carolina &ndash; the 2000 and 2016 presidential elections &ndash; to examine the evolution of spatial-political polarization in the state. 
+				          </p>  <!-- This is old text that I'm not using -->
+</span> 
+
+
+<!-- 2000 Presidential Section -->
+    
+    <section id="elections" style="padding-top: 2em; margin-bottom: 10px" class="elections-section text-center">
+      	<div class="container">
+        	<div class="row">
+          		<div class="col-lg-8 mx-auto">
+            		<h2 class="section-title">
+            			2000 Presidential Election
+            		</h2> 
+            		
+            		<h6 style="font-family: Europa, Work Sans, Helvetica; font-weight: 400">
+            			George W. Bush* (R) & Al Gore (D)
+            		</h6>
 			     
-          <div id='map2'></div>
-          <div id='mapmed2'></div>
-          <div id="info_container2"></div>
-          <div id="legend_container2"></div>
-          <br></br>
-          <p class="metrics-desk"><b>2000 Total Traditional Landslide Counties</b>: 51<br>(40 Republican wins, 11 Democratic wins)<br><br><b>2000 Total Mega-Landslide Counties</b>: 6<br>(all Republican wins)
-          </p><br>
+			        <div id='map2'></div>
+			        <div id='mapmed2'></div>
+			        <div id="info_container2"></div>
+			        <div id="legend_container2"></div>
+			        
+			        <br>
+			        <br>
+	          
+	          			<p class="metrics-desk">
+	          				<b>2000 Total Traditional Landslide Counties</b>: 51<br>(40 Republican wins, 11 Democratic wins)<br><br><b>2000 Total Mega-Landslide Counties</b>: 6<br>(all Republican wins)
+	          			</p>
 
-          <p style="text-align: left" class="negmargin">A helpful metric for considering polarization is the landslide victory, which is defined by Bill Bishop in his book <em>The Big Sort</em> as an election where one candidate wins by more than 20 points (FiveThirtyEight also <a href="https://fivethirtyeight.com/features/purple-america-has-all-but-disappeared/" target="_blank">considers</a> elections with margins higher than 20 points to be a landslide.)</p>
+	          			<br>
 
-          <span class="data"><p class="metrics-mob"><b>2000 Total Traditional Landslide Counties</b>: 51<br>(40 Republican wins, 11 Democratic wins)<br><br><b>2000 Total Mega-Landslide Counties</b>: 6<br>(all Republican wins)
-          </p><br></span>
+	            		<p style="text-align: left" class="negmargin">
+	            			A helpful metric for considering polarization is the landslide victory, which is defined by Bill Bishop in his book <em>The Big Sort</em> as an election where one candidate wins by more than 20 points (FiveThirtyEight <a href="https://fivethirtyeight.com/features/purple-america-has-all-but-disappeared/" target="_blank">considers</a> elections with margins higher than 20 points to be a landslide, as <a href="https://www.nytimes.com/interactive/2016/11/10/us/politics/red-blue-divide-grew-stronger-in-2016.html." target="_blank">does</a> <em>The New York Times</em>.)
+	            		</p>
 
-		<p style="text-align: left">The problem with such a definition, however, is that it conceals the heterogeneity of landslide counties. While some margins sit just above 20 points, others soar beyond 60 (a point also highlighted by the above FiveThirtyEight <a href="https://fivethirtyeight.com/features/purple-america-has-all-but-disappeared/" target="_blank">piece</a>). </p>	
+	            		<span class="data">
+	            			<p class="metrics-mob">
+	            				<b>2000 Total Traditional Landslide Counties</b>: 51<br>(40 Republican wins, 11 Democratic wins)<br><br><b>2000 Total Mega-Landslide Counties</b>: 6<br>(all Republican wins)
+	            			</p><br>
+	            		</span>
 
-		<p style="text-align: left">It's useful to add an additional category: the mega-landslide, or an election where the margin of victory exceeds 40 points. In the above map of the 2000 presidential election, there are 51 traditional landslide counties (78% of which were Republican, and the other 22% were Democratic). Of the 51 landslide counties, 6 are mega-landslides. Since 2000, both the numbers of traditional landslide counties and mega-landslide counties have increased dramatically.</p>	
+						<p style="text-align: left">
+							The problem with such a definition, however, is that it conceals the heterogeneity of landslide counties. While some margins sit just above 20 points, others soar beyond 60 (a point also highlighted by the above FiveThirtyEight <a href="https://fivethirtyeight.com/features/purple-america-has-all-but-disappeared/" target="_blank">piece</a>).
+						</p>	
 
-    <div id="pie2000" style="width: 100%"></div><br><br>			          
+						<p style="text-align: left">
+							It's useful to add an additional category: the mega-landslide, or an election where the margin of victory exceeds 40 points. In the above map of the 2000 presidential election, there are 51 traditional landslide counties (78% of which were Republican, and the other 22% were Democratic). Of the 51 landslide counties, 6 are mega-landslides. Since 2000, both the numbers of traditional landslide counties and mega-landslide counties have increased considerably.
+						</p>	
 
-
-          
-
-<script type="text/javascript" src="json/nc_2000p.geojson"></script>
-<script type="text/javascript">
-
-
-// Leaflet Code Map 2
-// Create second map variable 
-var map2 = L.map('map2', { zoomControl:false }).setView([34.980061, -79.920941], 3);
-
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-	maxZoom: 6.45,
-	minZoom: 6.45,
-	zoomSnap: 1,
-	attribution: 'Map data from <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="_blank">U.S. Census Bureau</a> + ' + '<a href="https://www.american.edu/spa/ccps/data-sets.cfm" target="_blank">AU School of Public Affairs</a>' ,
-	id: 'mapbox.dark'
-}).addTo(map2);
-console.log("map loaded")
-
-// control that shows state info on hover
-var info2 = L.control();
-
-info2.onAdd = function(map2) {
-	this._div = L.DomUtil.create('div', 'info2');
-	this.update();
-	return this._div; 
-}
-console.log("info function one added")
-
-
-// Election results + margin of victory
-info2.update = function(props) {
-	this._div.innerHTML = '<h4>Results</h4>' + (props ? '<h3>' + props.NAME + ' County</h3><br>' + '<h6>Gore: ' + props.demp2000 + '%<br>' + 'Bush: ' + props.gopp2000 + '%<br>' + 'Margin: ' + Math.abs(props.movp2000) + ' pts</h6>'
-	:'<br><h5>Hover over a county</h5>');
-};
-
-info2.addTo(map2);
-
-// second geojson file
-
-var geojson2 = L.geoJson(Elec00, {style: style}).addTo(map2);
-// console.log(geojson2.getLayers().length);
-// console.log(Elec00.features.length);
+	    				<div id="pie2000" style="width: 100%"></div> <!-- This is the 2000 election + the text -->
+          				<br>
+          				<br>
 				
-function style(feature) {
-	return {
-	fillColor: getColor(feature.properties.movp2000),
-	weight: 1.5,
-	opacity: .5,
-	color: '#eeeeee',
-	fillOpacity: 1
-	}
-}; 
+				<!-- This is the javascript for the first map -->
+				<span>
+				<script type="text/javascript" src="json/nc_2000p.geojson"></script>
 
-// add colors to each county
-	function getColor(d) {
-  	return d > 40 ? '#3c7cc6' :
-      d > 20 ? '#81a8d9' :
-      d > 0 ? '#c0d4e9' :
-      d > -20 ? '#e5c3c3' :
-      d > -40 ? '#d48c8b' :
-           '#b51f1d' ;
-}
+				<script type="text/javascript">
 
-// control hover features / colors 
-function highlightFeature(e) {
-	var layer = e.target;
-	layer.setStyle({
-		weight: 5,
-		color: '#000',
-		dashArray: '',
-		fillOpacity: 1.5
-	});
-				
-	if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-			layer.bringToFront();
-	};
+				// Leaflet Code Map 2
+				// Create second map variable 
+				var map2 = L.map('map2', { zoomControl:false }).setView([34.980061, -79.920941], 3);
 
-info2.update(layer.feature.properties);
-}
+				L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+					maxZoom: 6.45,
+					minZoom: 6.45,
+					zoomSnap: 1,
+					attribution: 'Map data from <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="_blank">U.S. Census Bureau</a> + ' + '<a href="https://www.american.edu/spa/ccps/data-sets.cfm" target="_blank">AU School of Public Affairs</a>' ,
+					id: 'mapbox.dark'
+				}).addTo(map2);
 
-function resetHighlight(e) {
-	geojson2.resetStyle(e.target);
-}
+				console.log("map loaded")
 
-console.log(highlightFeature)
+				// control that shows state info on hover
+				var info2 = L.control();
 
-function onEachFeature(feature, layer) {
-	layer.on({
-		mouseover: highlightFeature,
-		mouseout: resetHighlight
-	});
-}
-
-var geojson2 = L.geoJson(Elec00, {
-	style: style,
-	onEachFeature: onEachFeature
-}).addTo(map2);
-
-var icon = L.Icon.extend({
-  options: {
-    iconSize:     [10, 10],
-    iconAnchor:   [5, 5],
-    popupAnchor:  [0, 0]
-  }
-});
-
-// add points to the map (cities)
-var point = new icon({iconUrl: 'img/dot-circle.svg'});
-  L.marker([35.2271, -80.8431], {icon: point})
-  	.bindTooltip("Charlotte")
-   	.openTooltip(map2)
-   	.addTo(map2);
-  L.marker([35.796, -78.6382], {icon: point})
-   	.bindTooltip("Raleigh")
-   	.openTooltip(map2)
-   	.addTo(map2);
-  L.marker([35.5951, -82.5515], {icon: point})
-   	.bindTooltip("Asheville")
-  	.openTooltip(map2)
-  	.addTo(map2);
-  L.marker([36.0726, -79.7920], {icon: point})
-  	.bindTooltip("Greensboro")
-  	.openTooltip(map2)
-  	.addTo(map2);
-
-// legend controls 
-var legend = L.control({position: 'bottomright'});
-
-legend.onAdd = function (map) {
-
-  var div = L.DomUtil.create('div', 'info legend'),
-    grades = [-60, -40, -20, 0, 20, 40],
-    labels = ["<b>Margin of Victory (pts)</b>"],
-  from, to;
-  
-  // create the llabel variable for the legend
-  for (var i = 0; i < grades.length; i++) {
-    from = grades[i];
-    to = grades[i + 1];
-            
-  if(grades[i] < 0) {
-    party = 'GOP'
-  } else {
-    party = 'Dem'
-  }
-
-  if (grades[i] < -40) {
-  	llabel = '(40+)'
-  }	else if (grades[i] < -20) {
-  	llabel = '(20-40)'
-  }	else if (grades[i] < 0) {
-  	llabel = '(0-20)'
-  }	else if (grades[i] > 40) {
-  	llabel = '(0-20)'
-  }	else if (grades[i] > 20) {
-  	llabel = '(40+)'
-  }	else if (grades[i] > 0) {
-  	llabel = '(20-40)'
-  }
-
-labels.push(
-  '<i style="background:' + getColor(from + 1) + '"></i>'+ party + ' ' + llabel);
-
-  }
-
-div.innerHTML = labels.join('<br>');
-return div;
-};
-
-legend.addTo(map2);
-
-var mapmed2 = L.map('mapmed2', { zoomControl:false }).setView([34.980061, -79.920941], 3);
-
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-	maxZoom: 5.7,
-	minZoom: 5.7,
-	zoomSnap: 2,
-	attribution: 'Map data from <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="_blank">U.S. Census Bureau</a> + ' + '<a href="https://www.american.edu/spa/ccps/data-sets.cfm" target="_blank">AU School of Public Affairs</a>' ,
-	id: 'mapbox.dark'
-}).addTo(mapmed2);
-console.log("map loaded")
-
-// control that shows state info on hover
+				info2.onAdd = function(map2) {
+					this._div = L.DomUtil.create('div', 'info2');
+					this.update();
+					return this._div; 
+				}
+				console.log("info function one added")
 
 
-// second geojson file
+				// Election results + margin of victory
+				info2.update = function(props) {
+					this._div.innerHTML = '<h4>Results</h4>' + (props ? '<h3>' + props.NAME + ' County</h3><br>' + '<h6>Gore: ' + props.demp2000 + '%<br>' + 'Bush: ' + props.gopp2000 + '%<br>' + 'Margin: ' + Math.abs(props.movp2000) + ' pts</h6>'
+					:'<br><h5>Hover over a county</h5>');
+				};
 
-var geojson3 = L.geoJson(Elec00, {style: style}).addTo(mapmed2);
-// console.log(geojson2.getLayers().length);
-// console.log(Elec00.features.length);
-				
-// function style(feature) {
-// 	return {
-// 	fillColor: getColor(feature.properties.movp2000),
-// 	weight: 1.5,
-// 	opacity: .5,
-// 	color: '#eeeeee',
-// 	fillOpacity: 1
-// 	}
-// }; 
+				info2.addTo(map2);
 
-// // add colors to each county
-// 	function getColor(d) {
-//   	return d > 40 ? '#3c7cc6' :
-//       d > 20 ? '#81a8d9' :
-//       d > 0 ? '#c0d4e9' :
-//       d > -20 ? '#e5c3c3' :
-//       d > -40 ? '#d48c8b' :
-//            '#b51f1d' ;
-// }
+				// second geojson file
 
-// // control hover features / colors 
-// function highlightFeature(e) {
-// 	var layer = e.target;
-// 	layer.setStyle({
-// 		weight: 5,
-// 		color: '#000',
-// 		dashArray: '',
-// 		fillOpacity: 1.5
-// 	});
-				
-// 	if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-// 			layer.bringToFront();
-// 	};
+				var geojson2 = L.geoJson(Elec00, {style: style}).addTo(map2);
+				// console.log(geojson2.getLayers().length);
+				// console.log(Elec00.features.length);
+								
+				function style(feature) {
+					return {
+					fillColor: getColor(feature.properties.movp2000),
+					weight: 1.5,
+					opacity: .5,
+					color: '#eeeeee',
+					fillOpacity: 1
+					}
+				}; 
 
-// info2.update(layer.feature.properties);
-// }
+				// add colors to each county
+					function getColor(d) {
+				  	return d > 40 ? '#3c7cc6' :
+				      d > 20 ? '#81a8d9' :
+				      d > 0 ? '#c0d4e9' :
+				      d > -20 ? '#e5c3c3' :
+				      d > -40 ? '#d48c8b' :
+				           '#b51f1d' ;
+				}
 
-// function resetHighlight(e) {
-// 	geojson3.resetStyle(e.target);
-// }
+				// control hover features / colors 
+				function highlightFeature(e) {
+					var layer = e.target;
+					layer.setStyle({
+						weight: 5,
+						color: '#000',
+						dashArray: '',
+						opacity: .5,
+						fillOpacity: 1.5
+					});
+								
+					if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+							layer.bringToFront();
+					};
 
-// console.log(highlightFeature)
+					info2.update(layer.feature.properties);
+				}
 
-// function onEachFeature(feature, layer) {
-// 	layer.on({
-// 		mouseover: highlightFeature,
-// 		mouseout: resetHighlight
-// 	});
-// }
+				function resetHighlight(e) {
+					geojson2.resetStyle(e.target);
+				}
 
-// var geojson3 = L.geoJson(Elec00, {
-// 	style: style,
-// 	onEachFeature: onEachFeature
-// }).addTo(mapmed2);
+				console.log(highlightFeature)
 
-// var icon = L.Icon.extend({
-//   options: {
-//     iconSize:     [10, 10],
-//     iconAnchor:   [5, 5],
-//     popupAnchor:  [0, 0]
-//   }
-// });
+				function onEachFeature(feature, layer) {
+					layer.on({
+						mouseover: highlightFeature,
+						mouseout: resetHighlight
+					});
+				}
 
-// // add points to the map (cities)
-// var point = new icon({iconUrl: 'img/dot-circle.svg'});
-//   L.marker([35.2271, -80.8431], {icon: point})
-//   	.bindTooltip("Charlotte")
-//    	.openTooltip(map2)
-//    	.addTo(map2);
-//   L.marker([35.796, -78.6382], {icon: point})
-//    	.bindTooltip("Raleigh")
-//    	.openTooltip(map2)
-//    	.addTo(map2);
-//   L.marker([35.5951, -82.5515], {icon: point})
-//    	.bindTooltip("Asheville")
-//   	.openTooltip(map2)
-//   	.addTo(map2);
-//   L.marker([36.0726, -79.7920], {icon: point})
-//   	.bindTooltip("Greensboro")
-//   	.openTooltip(map2)
-//   	.addTo(map2);
+				var geojson2 = L.geoJson(Elec00, {
+					style: style,
+					onEachFeature: onEachFeature
+				}).addTo(map2);
 
-// legend controls 
+				var icon = L.Icon.extend({
+				  options: {
+				    iconSize:     [10, 10],
+				    iconAnchor:   [5, 5],
+				    popupAnchor:  [0, 0]
+				  }
+				});
+
+				// add points to the map (cities)
+				var point = new icon({iconUrl: 'img/dot-circle.svg'});
+				  L.marker([35.2271, -80.8431], {icon: point})
+				  	.bindTooltip("Charlotte")
+				   	.openTooltip(map2)
+				   	.addTo(map2);
+				  L.marker([35.796, -78.6382], {icon: point})
+				   	.bindTooltip("Raleigh")
+				   	.openTooltip(map2)
+				   	.addTo(map2);
+				  L.marker([35.5951, -82.5515], {icon: point})
+				   	.bindTooltip("Asheville")
+				  	.openTooltip(map2)
+				  	.addTo(map2);
+				  L.marker([36.0726, -79.7920], {icon: point})
+				  	.bindTooltip("Greensboro")
+				  	.openTooltip(map2)
+				  	.addTo(map2);
+
+				// legend controls 
+				var legend = L.control({position: 'bottomright'});
+
+				legend.onAdd = function (map) {
+
+				  var div = L.DomUtil.create('div', 'info legend'),
+				    grades = [-60, -40, -20, 0, 20, 40],
+				    labels = ["<b>Margin of Victory (pts)</b>"],
+				  from, to;
+				  
+				  // create the llabel variable for the legend
+				  for (var i = 0; i < grades.length; i++) {
+				    from = grades[i];
+				    to = grades[i + 1];
+				            
+				  if(grades[i] < 0) {
+				    party = 'GOP'
+				  } else {
+				    party = 'Dem'
+				  }
+
+				  if (grades[i] < -40) {
+				  	llabel = '(40+)'
+				  }	else if (grades[i] < -20) {
+				  	llabel = '(20-40)'
+				  }	else if (grades[i] < 0) {
+				  	llabel = '(0-20)'
+				  }	else if (grades[i] > 40) {
+				  	llabel = '(0-20)'
+				  }	else if (grades[i] > 20) {
+				  	llabel = '(40+)'
+				  }	else if (grades[i] > 0) {
+				  	llabel = '(20-40)'
+				  }
+
+				labels.push(
+				  '<i style="background:' + getColor(from + 1) + '"></i>'+ party + ' ' + llabel);
+
+				  }
+
+				div.innerHTML = labels.join('<br>');
+				return div;
+				};
+
+				legend.addTo(map2);
+
+				var mapmed2 = L.map('mapmed2', { zoomControl:false }).setView([34.980061, -79.920941], 3);
+
+				L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+					maxZoom: 5.7,
+					minZoom: 5.7,
+					zoomSnap: 2,
+					attribution: 'Map data from <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="_blank">U.S. Census Bureau</a> + ' + '<a href="https://www.american.edu/spa/ccps/data-sets.cfm" target="_blank">AU School of Public Affairs</a>' ,
+					id: 'mapbox.dark'
+				}).addTo(mapmed2);
+				console.log("map loaded")
+
+				// control that shows state info on hover
 
 
-var htmlObject = info2.getContainer();
-// Get the desired parent node.
-var a = document.getElementById('info_container2');
+				// second geojson file
 
-function setParent(el, newParent)
-{
-    newParent.appendChild(el);
-}
-setParent(htmlObject, a);
+				var geojson3 = L.geoJson(Elec00, {style: style}).addTo(mapmed2);
+				// console.log(geojson2.getLayers().length);
+				// console.log(Elec00.features.length);
+								
+				// function style(feature) {
+				// 	return {
+				// 	fillColor: getColor(feature.properties.movp2000),
+				// 	weight: 1.5,
+				// 	opacity: .5,
+				// 	color: '#eeeeee',
+				// 	fillOpacity: 1
+				// 	}
+				// }; 
 
-var htmlObjectL = legend.getContainer();
-// Get the desired parent node.
-var b = document.getElementById('legend_container2');
+				// // add colors to each county
+				// 	function getColor(d) {
+				//   	return d > 40 ? '#3c7cc6' :
+				//       d > 20 ? '#81a8d9' :
+				//       d > 0 ? '#c0d4e9' :
+				//       d > -20 ? '#e5c3c3' :
+				//       d > -40 ? '#d48c8b' :
+				//            '#b51f1d' ;
+				// }
 
-function setParent(el, newParent)
-{
-    newParent.appendChild(el);
-}
-setParent(htmlObjectL, b);
+				// // control hover features / colors 
+				// function highlightFeature(e) {
+				// 	var layer = e.target;
+				// 	layer.setStyle({
+				// 		weight: 5,
+				// 		color: '#000',
+				// 		dashArray: '',
+				// 		fillOpacity: 1.5
+				// 	});
+								
+				// 	if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+				// 			layer.bringToFront();
+				// 	};
 
-</script>
+				// info2.update(layer.feature.properties);
+				// }
 
-<br>
-          </div>
-        </div>
-      </div>
+				// function resetHighlight(e) {
+				// 	geojson3.resetStyle(e.target);
+				// }
+
+				// console.log(highlightFeature)
+
+				// function onEachFeature(feature, layer) {
+				// 	layer.on({
+				// 		mouseover: highlightFeature,
+				// 		mouseout: resetHighlight
+				// 	});
+				// }
+
+				// var geojson3 = L.geoJson(Elec00, {
+				// 	style: style,
+				// 	onEachFeature: onEachFeature
+				// }).addTo(mapmed2);
+
+				// var icon = L.Icon.extend({
+				//   options: {
+				//     iconSize:     [10, 10],
+				//     iconAnchor:   [5, 5],
+				//     popupAnchor:  [0, 0]
+				//   }
+				// });
+
+				// // add points to the map (cities)
+				// var point = new icon({iconUrl: 'img/dot-circle.svg'});
+				//   L.marker([35.2271, -80.8431], {icon: point})
+				//   	.bindTooltip("Charlotte")
+				//    	.openTooltip(map2)
+				//    	.addTo(map2);
+				//   L.marker([35.796, -78.6382], {icon: point})
+				//    	.bindTooltip("Raleigh")
+				//    	.openTooltip(map2)
+				//    	.addTo(map2);
+				//   L.marker([35.5951, -82.5515], {icon: point})
+				//    	.bindTooltip("Asheville")
+				//   	.openTooltip(map2)
+				//   	.addTo(map2);
+				//   L.marker([36.0726, -79.7920], {icon: point})
+				//   	.bindTooltip("Greensboro")
+				//   	.openTooltip(map2)
+				//   	.addTo(map2);
+
+				// legend controls 
+
+
+				var htmlObject = info2.getContainer();
+				// Get the desired parent node.
+				var a = document.getElementById('info_container2');
+
+				function setParent(el, newParent)
+				{
+				    newParent.appendChild(el);
+				}
+				setParent(htmlObject, a);
+
+				var htmlObjectL = legend.getContainer();
+				// Get the desired parent node.
+				var b = document.getElementById('legend_container2');
+
+				function setParent(el, newParent)
+				{
+				    newParent.appendChild(el);
+				}
+				setParent(htmlObjectL, b);
+
+				</script>
+				</span>
+
+
+          		</div>
+        	</div>
+      	</div>
     </section>
 
 <hr />
@@ -450,667 +608,1044 @@ setParent(htmlObjectL, b);
 <!-- 2016 Presidential Section -->
   
     <section id="elections" class="elections-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 style="padding-top: 2em; margin-bottom: 10px">2016 Presidential Election</h2>
-              <h6 style="font-family: Work Sans, Helvetica; font-weight: 300; margin-top: 0px; margin-bottom: 15px">Donald Trump* (R) & Hillary Clinton (D)</h6>
+      	<div class="container">
+        	<div class="row">
+          		<div class="col-lg-8 mx-auto">
+            		<h2 class="section-title">
+            			2016 Presidential Election
+            		</h2> 
+              		
+              		<h6 style="font-family: Europa, Work Sans, Helvetica; font-weight: 400; margin-top: 0px; margin-bottom: 15px">
+              			Donald Trump* (R) & Hillary Clinton (D)
+              		</h6>
             
-            <!--MAP DIV-->
-            <div id='map'></div>
-            <div id='mapmed'></div>
-            <div id="info_container"></div>
-            <div id="legend_container"></div>
-            <br><br>
+		            <!--MAP DIV-->
+		            <div id='map'></div>
+		            <div id='mapmed'></div>
+		            <div id="info_container"></div>
+		            <div id="legend_container"></div>
+		            <br><br>
             	
-            
-            <div><p class="metrics-desk"><b>2016 Total Traditional Landslide Counties</b>: 63<br>(52 Republican wins, 11 Democratic wins)<br><br><b>2016 Total Mega-Landslide Counties</b>: 26<br>(24 Republican wins, 2 Democratic wins)
-            </p></div>
+            		<div>
+            			<p class="metrics-desk">
+            				<b>2016 Total Traditional Landslide Counties</b>: 63<br>(52 Republican wins, 11 Democratic wins)<br><br><b>2016 Total Mega-Landslide Counties</b>: 26<br>(24 Republican wins, 2 Democratic wins)
+            			</p>
+            		</div>
 
-            
+            		<br><br>
 
-            <br><p style="text-align: left" class="negmargin">From 2000 to 2016, the total number of landslide counties jumped from 51 to 63, resulting in an increase of approximately 20%. More notably, the number of mega-landslide counties leapt 433%, from 6 to 26, and heavily favor the Republican candidate (this trend is clearly demonstrated in the graphic below). Nearly 83% of all the landslide counties (traditional and mega-landslides) were won by Donald Trump, and an overwhelming majority of mega-landslides were red as well (92%). </p>
+            		<p style="text-align: left" class="negmargin">
+            			From 2000 to 2016, the total number of landslide counties jumped from 51 to 63, resulting in an increase of approximately 20%. More notably, the number of mega-landslide counties leapt 433%, from 6 to 26, and heavily favor the Republican candidate. Nearly 83% of all the landslide counties (traditional and mega-landslides) were won by Donald Trump, and an overwhelming majority of mega-landslides were red as well (92%).
+            		</p>
 
-            <span class="data"><p class="metrics-mob"><b>2016 Total Traditional Landslide Counties</b>: 63<br>(52 Republican wins, 11 Democratic wins)<br><br><b>2000 Total Mega-Landslide Counties</b>: 26<br>(24 Republican wins, 2 Democratic wins)
-          </p></span>
+            		<span class="data">
+            			<p class="metrics-mob">
+            				<b>2016 Total Traditional Landslide Counties</b>: 63<br>(52 Republican wins, 11 Democratic wins)<br><br><b>2000 Total Mega-Landslide Counties</b>: 26<br>(24 Republican wins, 2 Democratic wins)
+          				</p>
+          			</span>
 
-          <div id="pie2016" style="width: 100%"></div>
+       				<div id="pie2016" style="width: 100%"></div>
 
-            
+            		<p style="text-align: left" class="desk-margin">
+            			The evolution over time reveals that while Republican and Democratic wins as a whole have only wavered slightly, the number of Republican-won mega-landslide counties has exploded.  
+            		</p>
 
-            <p style="text-align: left" class="desk-margin">Such a trend could be explained by any number of forces: collective movement to the right on the part of the Republican party, a shift of Democratic voters out of traditionally conservative areas to urban cores (which are perhaps not coincidentally Democratic strongholds), successful efforts to get out the Republican vote, or successful efforts to stifle the Democratic vote in the state (check out what the Atlantic has to say on that <a href="https://www.theatlantic.com/politics/archive/2016/11/north-carolina-early-voting/506963/" target="_blank">here</a>). 
-            </p>
+            		<div id="stackedbar" style="display: none;"></div><br>
 
-            <div id="stackedbar"></div><br>
+            		<img src="img/election-evolution.png" alt="Results from presidential elections in North Carolina from 2000 to 2016, showing a steady increase in Republcan-won mega-landslide counties" style="width: 85%">
 
-            <p style="text-align: left">Also of interest is the distribution of people among those counties, and simply showing the election results betrays another layer of complexity. In the chart below, you'll find the percentage of the total population of each county (based on July 2015 <a href="https://files.nc.gov/ncosbm/demog/countygrowth_2015.html" target="_blank">estimates</a>) in the state of North Carolina compared to the proportion of each county type. For example, Democratic Mega-Landslide counties comprised only 2% of North Carolina's counties, but those counties hold 4.35% of the state's total population. It's evident then that despite few Democratic county-level victories, Democratic counties tend to be more vote rich and represent more constituents than their Republican counterparts.</p><br>
+           			<p style="text-align: left" class="desk-margin">
+           				Importantly, it's not just a trend in North Carolina. Counties across the United States have seen striking increases in Republican-won mega-landslide counties. 
+            		</p>
 
-            <div id="stackedarea"></div>
+            		<img src="img/national_results.png" alt="County category compared to population" style="width: 85%">
 
-            <br><p style="text-align: left">That elections are becoming less competitive should certainly raise flags among party leaders and the public. Spatial-political polarization and the resulting reality that leaves us in increasingly homogenous political communities is a problematic prospect, given the tendency of like-minded groups to grow more reticent to consider alternative points of view with passing time. Check out the third chapter of Bishop's <em>The Big Sort</em> called "The Psychology of the Tribe" for additional explanation + more resources to explore.<br><br>
-          </p>
+            		<br><br>
 
-<!--
-<div id="chart">
-  <svg></svg>
-</div>
+<!--             		<p style="text-align: left">
+            			Also of interest is the distribution of people among those counties, and simply showing the election results betrays another layer of complexity. In the chart below, you'll find the percentage of the total population of each county (based on July 2015 <a href="https://files.nc.gov/ncosbm/demog/countygrowth_2015.html" target="_blank">estimates</a>) in the state of North Carolina compared to the proportion of each county type. For example, Democratic mega-Landslide counties comprised only 3% of North Carolina's counties, but those counties hold 23.5% of the state's total population. It's evident then that despite few Democratic county-level victories, Democratic counties tend to be more vote-rich and represent more constituents than their Republican counterparts.
+            		</p> -->
 
-<script type="text/javascript">
-            //Donut chart example
-nv.addGraph(function() {
-  var chart = nv.models.pieChart()
-      .x(function(d) { return d.label })
-      .y(function(d) { return d.value })
-      .showLabels(true);
+            		<div id="stackedarea" style="display: none"></div>
 
-    d3.select("#chart svg")
-        .datum(data)
-      .transition().duration(1200)
-        .call(chart);
+<!--             		<img src="img/population_countycat.png" alt="County category compared to population showing that counties favoring the Democratic party also are the most populous" style="width: 85%"> -->
 
-  return chart;
-});
-</script>
--->
-<style> 
-	.leaflet-container {
-		background-color:rgba(255,0,0,0.0);
-	}
-</style>
+            		<br>
+            		
+            		<p style="text-align: left">
+            			The electoral landscape is changing, and it is increasingly characterized by mega-landslide counties. That elections are becoming less competitive should certainly raise flags among party leaders and the public. The important question here is whether or not it can be tied to recent trends of migration, our next subject of inquiry.<br><br>
+          			</p>
+          		
+          		<!-- This is the javascript for the second map and charts and style for leaflet container -->
+          		<span>
 
-<script type="text/javascript" src="json/nc_2016p_2.geojson"></script>
-<script type="text/javascript">
+					<style> 
+						.leaflet-container {
+							background-color:rgba(255,0,0,0.0);
+						}
+					</style>
 
-// Highcharts code
+					<script type="text/javascript" src="json/nc_2016p_2.geojson"></script>
+					<script type="text/javascript">
 
-var electionColors = ['#3c7cc6', '#81a8d9', '#c0d4e9', '#e5c3c3', '#d48c8b', '#b51f1d'];
+					// Highcharts code
 
-var pie2016 = new Highcharts.chart({
-    chart: {
-    	renderTo: 'pie2016',
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
-        type: 'pie',
-        style: {
-        	fontFamily: 'Work Sans',
-        },
-        spacingBottom: 0,
-        spacingTop: 0,
-        marginTop: 0,
-        margin: 0,
-        height: 300
-    },
-    title: {
-        text: null
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    plotOptions: {
-        pie: {
-            allowPointSelect: true,
-            cursor: 'pointer',
-            dataLabels: {
-                enabled: true,
-                format: '<b>{point.name}</b>: {point.percentage:.1f}%',
-                distance: 5,
-                overflow: "justify"
-                // style: {
-                //     color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                // }
-            }
-        }
-    },
-    series: [{
-        name: 'Election Results',
-        data: [{
-            name: 'GOP Mega-Landslide',
-            y: 24,
-            color: electionColors[5]
-        }, {
-            name: 'GOP Landslide',
-            y: 28,
-            color: electionColors[4]
-        }, {
-            name: 'Competitive GOP',
-            y: 24,
-            color: electionColors[3]
-        }, {
-            name: 'Competitive Dem',
-            y: 13,
-            color: electionColors[2]
-        }, {
-            name: 'Dem Landslide',
-            y: 9,
-            color: electionColors[1]
-        }, {
-            name: 'Dem Mega-Landslide',
-            y: 2,
-            color: electionColors[0]
-        }]
-    }],
-    exporting: {
-        enabled: false
-    },
-    navigation: {
-        buttonOptions: {
-            enabled: false
-        }
-    },
-    credits: {
-        enabled: false
-    }
-});
+					var electionColors = ['#3c7cc6', '#81a8d9', '#c0d4e9', '#e5c3c3', '#d48c8b', '#b51f1d'];
 
-var pie2000 = new Highcharts.chart({
-    chart: {
-    	renderTo: 'pie2000',
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
-        type: 'pie',
-        style: {
-        	fontFamily: 'Work Sans',
-        },
-        spacingBottom: 0,
-        spacingTop: 0,
-        marginTop: 0,
-        height: 300,
-    },
-    position: {
-      align: 'center'
-    },
-    title: {
-        text: null
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    plotOptions: {
-        pie: {
-            allowPointSelect: true,
-            cursor: 'pointer',
-            dataLabels: {
-                enabled: true,
-                format: '<b>{point.name}</b>: {point.percentage:.1f}%',
-                distance: 5,
-                overflow: "justify"
-                // style: {
-                //     color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                // }
-            }
-        }
-    },
-    series: [{
-        name: 'Election Results',
-        data: [{
-            name: 'GOP Mega-Landslide',
-            y: 6,
-            color: electionColors[5]
-        }, {
-            name: 'GOP Landslide',
-            y: 34,
-            color: electionColors[4]
-        }, {
-            name: 'Competitive GOP',
-            y: 35,
-            color: electionColors[3]
-        }, {
-            name: 'Competitive Dem',
-            y: 14,
-            color: electionColors[2]
-        }, {
-            name: 'Dem Landslide',
-            y: 11,
-            color: electionColors[1]
-        }]
-    }],
-    exporting: {
-        enabled: false
-    },
-    navigation: {
-        buttonOptions: {
-            enabled: false
-        }
-    },
-    credits: {
-        enabled: false
-    }
-});
+					var pie2016 = new Highcharts.chart({
+					    chart: {
+					    	renderTo: 'pie2016',
+					        plotBackgroundColor: null,
+					        plotBorderWidth: null,
+					        plotShadow: false,
+					        type: 'pie',
+					        style: {
+					        	fontFamily: 'Europa',
+					        },
+					        spacingBottom: 0,
+					        spacingTop: 0,
+					        marginTop: 0,
+					        margin: 0,
+					        height: 300
+					    },
+					    title: {
+					        text: null
+					    },
+					    tooltip: {
+					        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+					    },
+					    plotOptions: {
+					        pie: {
+					        	animation: {
+					                    duration: 1000,
+					                    easing: 'easeOutQuad'
+					            },
+					            allowPointSelect: true,
+					            cursor: 'pointer',
+					            dataLabels: {
+					                enabled: true,
+					                format: '<b>{point.name}</b>: {point.percentage:.1f}%',
+					                distance: 5,
+					                overflow: "justify"
+					                // style: {
+					                //     color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+					                // }
+					            }
+					        }
+					    },
+					    series: [{
+					        name: 'Election Results',
+					        data: [{
+					            name: 'GOP Mega-Landslide',
+					            y: 24,
+					            color: electionColors[5]
+					        }, {
+					            name: 'GOP Landslide',
+					            y: 28,
+					            color: electionColors[4]
+					        }, {
+					            name: 'Competitive GOP',
+					            y: 24,
+					            color: electionColors[3]
+					        }, {
+					            name: 'Competitive Dem',
+					            y: 13,
+					            color: electionColors[2]
+					        }, {
+					            name: 'Dem Landslide',
+					            y: 9,
+					            color: electionColors[1]
+					        }, {
+					            name: 'Dem Mega-Landslide',
+					            y: 2,
+					            color: electionColors[0]
+					        }]
+					    }],
+					    exporting: {
+					        enabled: false
+					    },
+					    navigation: {
+					        buttonOptions: {
+					            enabled: false
+					        }
+					    },
+					    credits: {
+					        enabled: false
+					    }
+					});
 
-var stackedbar = new Highcharts.chart({
-  chart: {
-      renderTo: 'stackedbar',
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
-        type: 'column',
-        style: {
-          fontFamily: 'Work Sans',
-        },
-        spacingBottom: 0,
-        spacingTop: 0,
-        marginTop: 75,
-        marginBottom: 75,
-        height: 400,
-        credits:{
-          enabled: false,
-        }
-    },
-        title: {
-        text: 'Breakdown of Presidential Electoral Results'
-    },
-    xAxis: {
-        categories: ['2000', '2004', '2008', '2012', '2016']
-    },
-    yAxis: {
-        min: 0,
-        max: 100,
-        title: {
-            text: 'North Carolina counties',
-        },
-        stackLabels: {
-            enabled: true,
-            style: {
-                fontWeight: 'bold',
-                color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
-            }
-        }
-    },
-    legend: {
-        align: 'right',
-        x: -30,
-        verticalAlign: 'bottom',
-        y: 0,
-        floating: false,
-        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
-        borderColor: '#fff',
-        borderWidth: 1,
-        shadow: false
-    },
-    credits: {
-        enabled: false
-    },
-    tooltip: {
-        headerFormat: '<b>{point.x}</b><br/>',
-        pointFormat: '{series.name}: {point.y}'
-    },
-    plotOptions: {
-        column: {
-            stacking: 'normal',
-            dataLabels: {
-                enabled: true,
-                color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
-            }
-        }
-    },
-    series: [{
-        name: 'GOP Mega-Landslide',
-        data: [6, 10, 4, 13, 24],
-        color: electionColors[5]
-    }, {
-        name: 'GOP Landslide',
-        data: [34, 37, 29, 27, 28],
-        color: electionColors[4]
-    }, {
-        name: 'Competitive GOP',
-        data: [35, 33, 34, 30, 24],
-        color: electionColors[3]
-    }, {
-        name: 'Dem Mega-Landslide',
-        data: [0, 0, 3, 3, 2],
-        color: electionColors[0]
-    }, {
-        name: 'Dem Landslide',
-        data: [11, 7, 8, 8, 9],
-        color: electionColors[1]
-    }, {
-        name: 'Competitive Dem',
-        data: [14, 13, 22, 19, 13],
-        color: electionColors[2]
-    }],
-    exporting: {
-        enabled: false
-    },
-    navigation: {
-        buttonOptions: {
-            enabled: false
-        }
-    }
-  });
+					var pie2000 = new Highcharts.chart({
+					    chart: {
+					    	renderTo: 'pie2000',
+					        plotBackgroundColor: null,
+					        plotBorderWidth: null,
+					        plotShadow: false,
+					        type: 'pie',
+					        style: {
+					        	fontFamily: 'Europa',
+					        },
+					        spacingBottom: 0,
+					        spacingTop: 0,
+					        marginTop: 0,
+					        height: 300,
+					    },
+					    position: {
+					      align: 'center'
+					    },
+					    title: {
+					        text: null
+					    },
+					    tooltip: {
+					        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+					    },
+					    plotOptions: {
+					        pie: {
+					            allowPointSelect: true,
+					            cursor: 'pointer',
+					            dataLabels: {
+					                enabled: true,
+					                format: '<b>{point.name}</b>: {point.percentage:.1f}%',
+					                distance: 5,
+					                overflow: "justify"
+					                // style: {
+					                //     color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+					                // }
+					            }
+					        }
+					    },
+					    series: [{
+					        name: 'Election Results',
+					        data: [{
+					            name: 'GOP Mega-Landslide',
+					            y: 6,
+					            color: electionColors[5]
+					        }, {
+					            name: 'GOP Landslide',
+					            y: 34,
+					            color: electionColors[4]
+					        }, {
+					            name: 'Competitive GOP',
+					            y: 35,
+					            color: electionColors[3]
+					        }, {
+					            name: 'Competitive Dem',
+					            y: 14,
+					            color: electionColors[2]
+					        }, {
+					            name: 'Dem Landslide',
+					            y: 11,
+					            color: electionColors[1]
+					        }]
+					    }],
+					    exporting: {
+					        enabled: false
+					    },
+					    navigation: {
+					        buttonOptions: {
+					            enabled: false
+					        }
+					    },
+					    credits: {
+					        enabled: false
+					    }
+					});
 
-var stackedarea = new Highcharts.chart({
-    chart: {
-        renderTo: 'stackedarea',
-        type: 'bar',
-        style: {
-          fontFamily: 'Work Sans',
-        },
-        spacingLeft: 5,
-        marginLeft: 150,
-    },
-    title: {
-        text: 'Electoral Results vs. Total Population in 2016'
-    },
-    xAxis: {
-        categories: ['GOP Mega-Landslide', 'GOP Landslide', 'Competitive GOP', 'Competitive Dem', 'Dem Landslide', 'Dem Mega-Landslide'],
-        title: {
-            text: null
-        }
-    },
-    yAxis: {
-        min: 0,
-        title: {
-            text: 'Percantage of Total',
-            align: 'high'
-        },
-        labels: {
-            overflow: 'justify'
-        }
-    },
-    tooltip: {
-        valueSuffix: '%'
-    },
-    plotOptions: {
-        bar: {
-            dataLabels: {
-                enabled: true
-            }
-        }
-    },
-    legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'bottom',
-        x: -40,
-        y: 80,
-        floating: true,
-        borderWidth: 1,
-        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
-        shadow: true
-    },
-    credits: {
-        enabled: false
-    },
-    series: [{
-        name: '% of Total Counties',
-        data: [24, 28, 24, 13, 9, 2],
-        color: '#00A896'
-    }, {
-        name: '% of Statewide Population',
-        data: [15.58, 25.28, 12.06, 20.05, 22.68, 4.35],
-        color: '#05668D'
-    }],
-    exporting: {
-        enabled: false
-    },
-    navigation: {
-        buttonOptions: {
-            enabled: false
-        }
-    },
-    credits: {
-        enabled: false
-    }
-});
+					var stackedbar = new Highcharts.chart({
+					  chart: {
+					      renderTo: 'stackedbar',
+					        plotBackgroundColor: null,
+					        plotBorderWidth: null,
+					        plotShadow: false,
+					        type: 'column',
+					        style: {
+					          fontFamily: 'Europa',
+					        },
+					        spacingBottom: 0,
+					        spacingTop: 0,
+					        marginTop: 75,
+					        marginBottom: 75,
+					        height: 400,
+					        credits:{
+					          enabled: false,
+					        }
+					    },
+					        title: {
+					        text: 'Breakdown of Presidential Electoral Results'
+					    },
+					    xAxis: {
+					        categories: ['2000', '2004', '2008', '2012', '2016']
+					    },
+					    yAxis: {
+					        min: 0,
+					        max: 100,
+					        title: {
+					            text: 'North Carolina counties',
+					        },
+					        stackLabels: {
+					            enabled: true,
+					            style: {
+					                fontWeight: 'bold',
+					                color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+					            }
+					        }
+					    },
+					    legend: {
+					        align: 'right',
+					        x: -30,
+					        verticalAlign: 'bottom',
+					        y: 0,
+					        floating: false,
+					        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+					        borderColor: '#fff',
+					        borderWidth: 1,
+					        shadow: false
+					    },
+					    credits: {
+					        enabled: false
+					    },
+					    tooltip: {
+					        headerFormat: '<b>{point.x}</b><br/>',
+					        pointFormat: '{series.name}: {point.y}'
+					    },
+					    plotOptions: {
+					        column: {
+					            stacking: 'normal',
+					            dataLabels: {
+					                enabled: true,
+					                color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+					            }
+					        }
+					    },
+					    series: [{
+					        name: 'GOP Mega-Landslide',
+					        data: [6, 10, 4, 13, 24],
+					        color: electionColors[5]
+					    }, {
+					        name: 'GOP Landslide',
+					        data: [34, 37, 29, 27, 28],
+					        color: electionColors[4]
+					    }, {
+					        name: 'Competitive GOP',
+					        data: [35, 33, 34, 30, 24],
+					        color: electionColors[3]
+					    }, {
+					        name: 'Dem Mega-Landslide',
+					        data: [0, 0, 3, 3, 2],
+					        color: electionColors[0]
+					    }, {
+					        name: 'Dem Landslide',
+					        data: [11, 7, 8, 8, 9],
+					        color: electionColors[1]
+					    }, {
+					        name: 'Competitive Dem',
+					        data: [14, 13, 22, 19, 13],
+					        color: electionColors[2]
+					    }],
+					    exporting: {
+					        enabled: false
+					    },
+					    navigation: {
+					        buttonOptions: {
+					            enabled: false
+					        }
+					    }
+					  });
 
-// Leaflet Code
-// Create the map variable
-				
-var map = L.map('map', { zoomControl:false }).setView([34.980061, -79.920941], 3);
+					var stackedarea = new Highcharts.chart({
+					    chart: {
+					        renderTo: 'stackedarea',
+					        type: 'bar',
+					        style: {
+					          fontFamily: 'Europa',
+					        },
+					        spacingLeft: 5,
+					        marginLeft: 150,
+					    },
+					    title: {
+					        text: 'Electoral Results vs. Total Population in 2016'
+					    },
+					    xAxis: {
+					        categories: ['GOP Mega-Landslide', 'GOP Landslide', 'Competitive GOP', 'Competitive Dem', 'Dem Landslide', 'Dem Mega-Landslide'],
+					        title: {
+					            text: null
+					        }
+					    },
+					    yAxis: {
+					        min: 0,
+					        title: {
+					            text: 'Percantage of Total',
+					            align: 'high'
+					        },
+					        labels: {
+					            overflow: 'justify'
+					        }
+					    },
+					    tooltip: {
+					        valueSuffix: '%'
+					    },
+					    plotOptions: {
+					        bar: {
+					            dataLabels: {
+					                enabled: true
+					            }
+					        }
+					    },
+					    legend: {
+					        layout: 'vertical',
+					        align: 'right',
+					        verticalAlign: 'bottom',
+					        x: -40,
+					        y: 80,
+					        floating: true,
+					        borderWidth: 1,
+					        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+					        shadow: true
+					    },
+					    credits: {
+					        enabled: false
+					    },
+					    series: [{
+					        name: '% of Total Counties',
+					        data: [24, 28, 24, 13, 9, 2],
+					        color: '#00A896'
+					    }, {
+					        name: '% of Statewide Population',
+					        data: [15.58, 25.28, 12.06, 20.05, 22.68, 4.35],
+					        color: '#05668D'
+					    }],
+					    exporting: {
+					        enabled: false
+					    },
+					    navigation: {
+					        buttonOptions: {
+					            enabled: false
+					        }
+					    },
+					    credits: {
+					        enabled: false
+					    }
+					});
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-	maxZoom: 6.45,
-	minZoom: 6.45,
-	zoomSnap: 1,
-	attribution: 'Map data from <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="_blank">U.S. Census Bureau</a> + ' + '<a href="https://uselectionatlas.org/" target="_blank">Election Atlas by Dave Leip</a>' ,
-	id: 'mapbox.dark'
-}).addTo(map);
-console.log("map loaded")
+					// Leaflet Code
+					// Create the map variable
+										
+					var map = L.map('map', { zoomControl:false }).setView([34.980061, -79.920941], 3);
 
-  
-
-// to control what shows up when you hover
-
-var info = L.control();
-
-info.onAdd = function(map) {
-  this._div = L.DomUtil.create('div', 'info');
-	this.update();
-	return this._div; 
-}
-
-// election results + margin of victory
-
-info.update = function(props) {
-	this._div.innerHTML = '<h4>Results</h4>' + (props ? '<h3>' + props.COUNTYNAME + ' County</h3><br>' + '<h6>Clinton: ' + props.demp2016 + '%<br>' + 'Trump: ' + props.gopp2016 + '%<br>' + 'Margin: ' + Math.abs(props.movp2016) + ' pts</h6>'
-	:'<br><h5>Hover over a county</h5>');
-};
-info.addTo(map);
-
-// var popup16 = L.popup();
-// geojson.on('')
-  // .setLatLng(latlng)
-  // .setContent('<h4>Results</h4>' + (props ? '<h3>' + props.COUNTYNAME + ' County</h3><br>' + '<h6>Clinton: ' + props.demp2016 + '%<br>' + 'Trump: ' + props.gopp2016 + '%<br>' + 'Margin: ' + Math.abs(props.movp2016) + ' pts</h6>'
-  // :'<br><h5>Hover over a county</h5>'))
-  // .openOn(map);
-
-var geojson = L.geoJson(pElec16, {style: style}).addTo(map);
-console.log(geojson.getLayers().length);
-console.log(pElec16.features.length);
-
-// add colors to each county
-	function getColor(d) {
-  	return d > 40 ? '#3c7cc6' :
-      d > 20 ? '#81a8d9' :
-      d > 0 ? '#c0d4e9' :
-      d > -20 ? '#e5c3c3' :
-      d > -40 ? '#d48c8b' :
-           '#b51f1d' ;
-}
-
-// hover and color characteristics				
-
-function style(feature) {
-	return {
-		fillColor: getColor(feature.properties.movp2016),
-		weight: 1.5,
-		opacity: .5,
-		color: '#eeeeee',
-		fillOpacity: 1
-	};
-}
-
-L.geoJson(pElec16, {style: style}).addTo(map); 
-
-function highlightFeature(e) {
-  var layer = e.target;
-
-  layer.setStyle({
-		weight: 5,
-		color: '#000',
-		dashArray: '',
-		opacity: .5,
-		fillOpacity: 1.5
-  });
-				
-  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-	  layer.bringToFront();
-  }
-
-  info.update(layer.feature.properties);
-}
-
-function resetHighlight(e) {
-	geojson.resetStyle(e.target);
-}
-
-console.log(highlightFeature)
+					L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+						maxZoom: 6.45,
+						minZoom: 6.45,
+						zoomSnap: 1,
+						attribution: 'Map data from <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="_blank">U.S. Census Bureau</a> + ' + '<a href="https://uselectionatlas.org/" target="_blank">Election Atlas by Dave Leip</a>' ,
+						id: 'mapbox.dark'
+					}).addTo(map);
 					
-function onEachFeature(feature, layer) {
-	layer.on({
-		mouseover: highlightFeature,
-		mouseout: resetHighlight
-	});
-}
+					console.log("map loaded")
+					 
+					// control that shows state info on hover
+					var info = L.control();
 
-var geojson = L.geoJson(pElec16, {
-	style: style,
-	onEachFeature: onEachFeature
-}).addTo(map);
+					info.onAdd = function(map) {
+					  this._div = L.DomUtil.create('div', 'info');
+						this.update();
+						return this._div; 
+					}
+					console.log("info function two added")
+						
+					// election results + margin of victory
 
-// controls for the cities on the map
-// icon controls 
+					info.update = function(props) {
+						this._div.innerHTML = '<h4>Results</h4>' + (props ? '<h3>' + props.COUNTYNAME + ' County</h3><br>' + '<h6>Clinton: ' + props.demp2016 + '%<br>' + 'Trump: ' + props.gopp2016 + '%<br>' + 'Margin: ' + Math.abs(props.movp2016) + ' pts</h6>'
+						:'<br><h5>Hover over a county</h5>');
+					};
+					info.addTo(map);
 
-var icon = L.Icon.extend({
-  options: {
-    iconSize:     [10, 10],
-    iconAnchor:   [5, 5],
-    popupAnchor:  [0, 0]
-  }
-});
+					// var popup16 = L.popup();
+					// geojson.on('')
+					  // .setLatLng(latlng)
+					  // .setContent('<h4>Results</h4>' + (props ? '<h3>' + props.COUNTYNAME + ' County</h3><br>' + '<h6>Clinton: ' + props.demp2016 + '%<br>' + 'Trump: ' + props.gopp2016 + '%<br>' + 'Margin: ' + Math.abs(props.movp2016) + ' pts</h6>'
+					  // :'<br><h5>Hover over a county</h5>'))
+					  // .openOn(map);
 
+					var geojson = L.geoJson(pElec16, {style: style}).addTo(map);
+					console.log(geojson.getLayers().length);
+					console.log(pElec16.features.length);
 
-// labels for each point
-var point = new icon({iconUrl: 'img/dot-circle.svg'});
-  L.marker([35.2271, -80.8431], {icon: point})
-    .bindTooltip("Charlotte")
-    .openTooltip(map)
-    .addTo(map);
-  L.marker([35.796, -78.6382], {icon: point})
-    .bindTooltip("Raleigh")
-    .openTooltip(map)
-    .addTo(map);
-  L.marker([35.5951, -82.5515], {icon: point})
-    .bindTooltip("Asheville")
-    .openTooltip(map)
-    .addTo(map);
-  L.marker([36.0726, -79.7920], {icon: point})
-    .bindTooltip("Greensboro")
-    .openTooltip(map)
-    .addTo(map);
+					// add colors to each county
+						function getColor(d) {
+					  	return d > 40 ? '#3c7cc6' :
+					      d > 20 ? '#81a8d9' :
+					      d > 0 ? '#c0d4e9' :
+					      d > -20 ? '#e5c3c3' :
+					      d > -40 ? '#d48c8b' :
+					           '#b51f1d' ;
+					}
 
-// legend controls 
-var legend = L.control({position: 'bottomright'});
+					// hover and color characteristics				
 
-legend.onAdd = function (map) {
+					function style(feature) {
+						return {
+							fillColor: getColor(feature.properties.movp2016),
+							weight: 1.5,
+							opacity: .5,
+							color: '#eeeeee',
+							fillOpacity: 1
+						};
+					}
 
-  var div = L.DomUtil.create('div', 'info legend'),
-    grades = [-60, -40, -20, 0, 20, 40],
-    labels = ["Margin of Victory (pts)"],
-    from, to;
+					L.geoJson(pElec16, {style: style}).addTo(map); 
 
-  // modify the legend labels
-  for (var i = 0; i < grades.length; i++) {
-    from = grades[i];
-    to = grades[i + 1];
-            
-    if(grades[i] < 0) {
-      party = 'GOP'
-    } 
-    else {
-      party = 'Dem'
-    }
+					function highlightFeature(e) {
+					  var layer = e.target;
 
-  // create the llabel field for the legend
-  if (grades[i] < -40) {
-      llabel = '(40+)'
-    }	else if (grades[i] < -20) {
-      llabel = '(20-40)'
-    }	else if (grades[i] < 0) {
-      llabel = '(0-20)'
-    }	else if (grades[i] > 40) {
-      llabel = '(0-20)'
-    }	else if (grades[i] > 20) {
-      llabel = '(40+)'
-    }	else if (grades[i] > 0) {
-      llabel = '(20-40)'
-    }
+					  layer.setStyle({
+							weight: 5,
+							color: '#000',
+							dashArray: '',
+							opacity: .5,
+							fillOpacity: 1.5
+					  });
+									
+					  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+						  layer.bringToFront();
+					  };
 
-  // create the labels
-  labels.push(
-      '<i style="background:' + getColor(from + 1) + '"></i>'+ party + ' ' + llabel);
-  }
+					  info.update(layer.feature.properties);
+					}
 
-  div.innerHTML = labels.join('<br>');
-  return div;
-};
+					function resetHighlight(e) {
+						geojson.resetStyle(e.target);
+					}
 
-legend.addTo(map);
+					console.log(highlightFeature)
+										
+					function onEachFeature(feature, layer) {
+						layer.on({
+							mouseover: highlightFeature,
+							mouseout: resetHighlight
+						});
+					}
 
-var mapmed = L.map('mapmed', { zoomControl:false }).setView([34.980061, -79.920941], 3);
+					var geojson = L.geoJson(pElec16, {
+						style: style,
+						onEachFeature: onEachFeature
+					}).addTo(map);
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-	maxZoom: 5.7,
-	minZoom: 5.7,
-	zoomSnap: 2,
-	attribution: 'Map data from <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="_blank">U.S. Census Bureau</a> + ' + '<a href="https://www.american.edu/spa/ccps/data-sets.cfm" target="_blank">AU School of Public Affairs</a>' ,
-	id: 'mapbox.dark'
-}).addTo(mapmed);
-console.log("map loaded")
+					// controls for the cities on the map
+					// icon controls 
 
-// control that shows state info on hover
+					var icon = L.Icon.extend({
+					  options: {
+					    iconSize:     [10, 10],
+					    iconAnchor:   [5, 5],
+					    popupAnchor:  [0, 0]
+					  }
+					});
 
 
-// second geojson file
+					// labels for each point
+					var point = new icon({iconUrl: 'img/dot-circle.svg'});
+					  L.marker([35.2271, -80.8431], {icon: point})
+					    .bindTooltip("Charlotte")
+					    .openTooltip(map)
+					    .addTo(map);
+					  L.marker([35.796, -78.6382], {icon: point})
+					    .bindTooltip("Raleigh")
+					    .openTooltip(map)
+					    .addTo(map);
+					  L.marker([35.5951, -82.5515], {icon: point})
+					    .bindTooltip("Asheville")
+					    .openTooltip(map)
+					    .addTo(map);
+					  L.marker([36.0726, -79.7920], {icon: point})
+					    .bindTooltip("Greensboro")
+					    .openTooltip(map)
+					    .addTo(map);
 
-var geojson4 = L.geoJson(pElec16, {style: style}).addTo(mapmed);
+					// legend controls 
+					var legend = L.control({position: 'bottomright'});
 
-var htmlObject = info.getContainer();
-// Get the desired parent node.
-var c = document.getElementById('info_container');
+					legend.onAdd = function (map) {
 
-function setParent(el, newParent)
-{
-    newParent.appendChild(el);
-}
-setParent(htmlObject, c);
+					  var div = L.DomUtil.create('div', 'info legend'),
+					    grades = [-60, -40, -20, 0, 20, 40],
+					    labels = ["Margin of Victory (pts)"],
+					    from, to;
 
-var htmlObjectL = legend.getContainer();
-// Get the desired parent node.
-var d = document.getElementById('legend_container');
+					  // modify the legend labels
+					  for (var i = 0; i < grades.length; i++) {
+					    from = grades[i];
+					    to = grades[i + 1];
+					            
+					    if(grades[i] < 0) {
+					      party = 'GOP'
+					    } 
+					    else {
+					      party = 'Dem'
+					    }
 
-function setParent(el, newParent)
-{
-    newParent.appendChild(el);
-}
-setParent(htmlObjectL, d);
+					  // create the llabel field for the legend
+					  if (grades[i] < -40) {
+					      llabel = '(40+)'
+					    }	else if (grades[i] < -20) {
+					      llabel = '(20-40)'
+					    }	else if (grades[i] < 0) {
+					      llabel = '(0-20)'
+					    }	else if (grades[i] > 40) {
+					      llabel = '(0-20)'
+					    }	else if (grades[i] > 20) {
+					      llabel = '(40+)'
+					    }	else if (grades[i] > 0) {
+					      llabel = '(20-40)'
+					    }
 
-</script>
+					  // create the labels
+					  labels.push(
+					      '<i style="background:' + getColor(from + 1) + '"></i>'+ party + ' ' + llabel);
+					  }
+
+					  div.innerHTML = labels.join('<br>');
+					  return div;
+					};
+
+					legend.addTo(map);
+
+					var mapmed = L.map('mapmed', { zoomControl:false }).setView([34.980061, -79.920941], 3);
+
+					L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+						maxZoom: 5.7,
+						minZoom: 5.7,
+						zoomSnap: 2,
+						attribution: 'Map data from <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="_blank">U.S. Census Bureau</a> + ' + '<a href="https://www.american.edu/spa/ccps/data-sets.cfm" target="_blank">AU School of Public Affairs</a>' ,
+						id: 'mapbox.dark'
+					}).addTo(mapmed);
+					console.log("map loaded")
+
+					// control that shows state info on hover
 
 
-          </div>
-        </div>
-      </div>
+					// second geojson file
+
+					var geojson4 = L.geoJson(pElec16, {style: style}).addTo(mapmed);
+
+					var htmlObject = info.getContainer();
+					// Get the desired parent node.
+					var c = document.getElementById('info_container');
+
+					function setParent(el, newParent)
+					{
+					    newParent.appendChild(el);
+					}
+					setParent(htmlObject, c);
+
+					var htmlObjectL = legend.getContainer();
+					// Get the desired parent node.
+					var d = document.getElementById('legend_container');
+
+					function setParent(el, newParent)
+					{
+					    newParent.appendChild(el);
+					}
+					setParent(htmlObjectL, d);
+
+					</script>
+				
+				</span>
+
+          		</div>
+        	</div>
+      	</div>
     </section>
     <hr />
 
-    <!-- Data Section -->
-    <section id="data" class="data-section content-section text-center">
-      <div class="container">
-        <div class="col-lg-8 mx-auto">
+<!-- Background Section -->
+    <section id="migration" style="padding-top: 2em; margin-bottom: 10px" class="elections-section text-center">
+      	<div class="container">
+        	<div class="row">
+          		<div class="col-lg-8 mx-auto">
+			    	<h2 class="section-title">
+			    		Migration in North Carolina
+			    	</h2>
+			    
+			    	<h5 style="text-align: center; font-family: Europa, Work Sans; font-weight: 400">
+			    		Where do people move, and does it matter? 
+			    	</h5>
 
-          <h2 style="margin-top: -3.6em">Sources & Data</h2>
-            <h6 style="font-family: Work Sans, Helvetica; font-size: 1.1em; font-weight: 300; margin-top: 0px; margin-bottom: 15px; letter-spacing: 0px">Sources</h6>
+		              	<p style="text-align: left">
+		              		Mapping migration among each of North Carolina's 100 counties is not only complex, but also fails to yield meaningful results. So instead of mapping migratory flows between the counties individually, I broke them into categories based on specific criteria. The most interesting category proved to be the <em>Republican change</em> category.
+		              	</p>
 
-          		<p style="text-align: left; font-size: 1em; padding-bottom: -.5em">
-                Agnew, John, and Luca Muscarà. 2012. <a href="https://www.amazon.com/Making-Political-Geography-John-Agnew/dp/1442212306" target="_blank">Making Political Geography</a>. John Agnew + Luca Muscarà. 2012. Plymouth: Rowman & Littlefield Publishers, Inc.<br><br>
-        				Drutman, Lee. <a href="https://www.vox.com/the-big-idea/2017/9/5/16227700/hyperpartisanship-identity-american-democracy-problems-solutions-doom-loop." target="_blank">"Hyperpartisanship could destroy U.S. democracy."</a> <em>Vox.com</em>. September 5, 2017. 
-        				<br><br>Hook, Janet. <a href="https://www.wsj.com/articles/political-divisions-in-u-s-are-widening-long-lasting-poll-shows-1504670461" target="_blank">Political Divisions in U.S. Are Widening, Long-Lasting, Poll Shows."</a> <em>Wall Street Journal</em>. September 6, 2017.
-        				<br><br>Pew Research Center. <a href="http://www.people-press.org/2017/10/05/the-partisan-divide-on-political-values-grows-even-wider/" target="_blank">The Partisan Divide on Political Values Grows Even Wider."</a> Pew Research Center. October 5, 2017.
+		              	<p style="text-align: left">
+		              		By substracting George Bush's share in 2000 from Donald Trump's share in 2016, I came to what I'm calling the <em>GOP change value</em>, and it's important for a couple of reasons. First, the value captures change over time, rather than just taking a snapshot from individual elections. We're able to place electoral change (and the degree of the change) in relation to migration. Second, as we saw in the previous section, there have been real increases in Republican margins, so it's useful to situate migratory data around that change. Using the map below, we can really see the geography of those shifts (though it's important to remember that counties where Republicans have lost ground are not necessarily Democratic counties &mdash; they've simply showed movement over time towards the Democratic party).
+		              	</p>
+
+		              	<div id="map3"></div>
+		              	<div id="mapmed3"></div>
+		              	<div id="info_container3"></div>
+		              	<div id="legend_container3"></div>
+
+		              	<br><br>
+
+		              	<div>
+            				<p class="metrics-desk">
+            					<b>Total Counties With Republican Losses</b>: 36<br><br><b>Total Counties That Became Less Competitve</b>: 70
+            				</p>
+            			</div>
+
+            			<br><br><br>
+
+            			<p style="text-align: left" class="negmargin">
+            				Once we've put each county in its correct category, we can map flows between those categories, and the best way to visualize those flows is through the use of sankey diagrams. The example diagram below shows how Person A, who moved from a low-loss to a high-loss county, would show up on a sankey diagram.
+            			</p>
+
+            		<span class="data">
+            			<p class="metrics-mob">
+            				<b>Total Counties With Republican Losses</b>: 36<br><br><b>Total Counties That Became Less Competitve</b>: 70
+          				</p>
+          			</span>
+
+          				<img src="img/ex_sankey.png" alt="An example sankey diagram demonstrating how it connects to a map" style="width: 85%">
+
+          				<br><br><br>
+
+		              	<p style="text-align: left">
+		              		Using this visualization method, we can see the way that migration differs among groups. For example, below we have the summary of migration among those with a Bachelor's degree. It's evident right away that most of those people already live in a county where the Democratic party has seen improved performance. In fact, a whopping 86% of migrants who left a very-high-loss county (those dark blue flow lines) moved to another county where Republicans have lost ground. 
+		             	 </p>
+
+		             	 <img src="img/bach_sankey.png" alt="A sankey diagram summarizing migration of those with a Bachelor's degree and showing significant concentration in counties where Republicans have lost ground" style="width: 85%">
+
+		             	 <br><br><br>
+
+		              	<p style="text-align: left">
+		              		Meanwhile, migration patterns of those with less than a high school degree show striking differences. Not only are those migrants not so highly concentrated in counties where Republicans have seen poor performance in recent years, only 38% of them moved between two "loss" counties, as compared with 65% of those with a Bachelor's degree. 
+		              	</p>
+
+		              	<img src="img/lesshs_sankey.png" alt="A sankey diagram summarizing migration of those with a Bachelor's degree and showing significant concentration in counties where Republicans have lost ground" style="width: 85%">
+
+		              	<br><br><br>
+
+		              	<p style="text-align: left">
+            				Also of interest is the distribution of people among those counties, and simply showing total migration flows absent that important context betrays another layer of complexity. In the chart below, you'll find the the total registered voting population of each county (based on December 2011 <a href="https://vt.ncsbe.gov/RegStat/Results/?date=12%2F31%2F2011" target="_blank">estimates</a>) in the state of North Carolina compared to the proportion of each county type. For example, Democratic mega-Landslide counties comprised only 3% of North Carolina's counties, but those counties hold 23.5% of the state's total population. It's evident then that despite few Democratic county-level victories, Democratic counties tend to be more vote-rich and represent more constituents than their Republican counterparts.
+            			</p>
+
+
+						<img src="img/population_countycat.png" alt="County category compared to population showing that counties favoring the Democratic party also are the most populous" style="width: 85%">
+
+						<br><br><br>
+						<br><br><br>
+
+					  <hr />
+					<!-- This is the end of the migration text -->
+				<span>
+					<script type="text/javascript" src="json/county_categories.geojson"></script>
+
+					<script type="text/javascript">
+					var map3 = L.map('map3', { zoomControl:false }).setView([34.980061, -79.920941], 3);
+
+					L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+						maxZoom: 6.45,
+						minZoom: 6.45,
+						zoomSnap: 1,
+						attribution: 'Map data from <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="_blank">U.S. Census Bureau</a> + ' + '<a href="https://uselectionatlas.org/" target="_blank">Election Atlas by Dave Leip</a>' ,
+						id: 'mapbox.dark'
+					}).addTo(map3);
+
+					console.log("map loaded")
+
+					var info3 = L.control();
+
+					info3.onAdd = function(map3) {
+						this._div = L.DomUtil.create('div', 'info');
+						this.update();
+						return this._div; 
+					}
+
+					// controls
+					info3.update = function (props) {
+						this._div.innerHTML = '<h4>Results</h4>' + (props ? '<h3>' + props.NAME + ' County</h3><br>' + '<h6>GOP Change: ' + props.gopchange_v + 'pts</h6>'
+						:'<br><h5>Hover over a county</h5>');
+					};
+					
+					info3.addTo(map3);
+
+					var geojson5 = L.geoJson(GOP, {
+					    style: style_gop,
+					    onEachFeature: onEachFeature
+					}).addTo(map3);
+
+					// add color
+					function style_gop(feature) {
+						return {
+						fillColor: getColorGOP(feature.properties.gopchange_v),
+						weight: 1.5,
+						opacity: .5,
+						color: '#eeeeee',
+						fillOpacity: 1
+						}
+					}; 
+
+					function getColorGOP(d) {
+					  	return d > 10 ? '#B72025' :
+					      d > 5 ? '#D58A89' :
+					      d > 0 ? '#E5C3C2' :
+					      d > -5 ? '#BED4EA' :
+					      d > -10 ? '#80A7D8' :
+					      d > -15 ? '#3E79BD' :
+					           '#253876' ;
+					};
+
+					function highlightFeature(f) {
+					    var layer = f.target;
+					    layer.setStyle({
+					        weight: 5,
+					        color: '#000',
+					        dashArray: '',
+					        fillOpacity: 1.5
+					    });
+
+					    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+					        layer.bringToFront();
+					    };
+
+					    info3.update(layer.feature.properties);
+					}
+
+					function resetHighlightGOP(f) {
+					    geojson5.resetStyle(f.target);
+					}
+
+					console.log(highlightFeature)
+
+					function onEachFeature(feature, layer) {
+					    layer.on({
+					        mouseover: highlightFeature,
+					        mouseout: resetHighlightGOP
+					    });
+					}
+
+					
+
+					// add points to the map (cities)
+					var point = new icon({iconUrl: 'img/dot-circle.svg'});
+					  L.marker([35.2271, -80.8431], {icon: point})
+					  	.bindTooltip("Charlotte")
+					   	.openTooltip(map3)
+					   	.addTo(map3);
+					  L.marker([35.796, -78.6382], {icon: point})
+					   	.bindTooltip("Raleigh")
+					   	.openTooltip(map3)
+					   	.addTo(map3);
+					  L.marker([35.5951, -82.5515], {icon: point})
+					   	.bindTooltip("Asheville")
+					  	.openTooltip(map3)
+					  	.addTo(map3);
+					  L.marker([36.0726, -79.7920], {icon: point})
+					  	.bindTooltip("Greensboro")
+					  	.openTooltip(map3)
+					  	.addTo(map3);
+
+					  var legend = L.control({position: 'bottomright'});
+
+					  legend.onAdd = function (map) {
+					  	
+					  	var div = L.DomUtil.create('div', 'info legend'),
+					  	grades = [-20, -15, -10, -5, 0, 5, 10],
+					  	labels = ["<b>GOP Change (pts)</b>"],
+					  	from, to;
+
+					  	for (var i = 0; i < grades.length; i++) {
+						    from = grades[i];
+						    to = grades[i + 1];
+						
+						if(grades[i] < 0) {
+						    party = 'GOP'
+						  } else {
+						    party = 'Dem'
+						  }
+						  
+						  if (grades[i] < -15) {
+						  	llabel = 'Very high loss'
+						  }	else if (grades[i] < -10) {
+						  	llabel = 'High loss'
+						  }	else if (grades[i] < -5) {
+						  	llabel = 'Medium loss'
+						  }	else if (grades[i] < 0) {
+						  	llabel = 'Low loss'
+						  }	else if (grades[i] < 5) {
+						  	llabel = 'Low gain'
+						  }	else if (grades[i] < 10) {
+						  	llabel = 'Medium gain'
+						  } else if (grades[i] < 15) {
+						  	llabel = 'High gain'
+						  }
+
+					  	labels.push(
+						  '<i style="background:' + getColorGOP(from + 1) + '"></i>'+ llabel);
+					  }
+
+					  div.innerHTML = labels.join('<br>');
+					  return div;
+					  	
+					  };
+
+					  legend.addTo(map3);
+
+					  var htmlObject3 = info3.getContainer();
+						// Get the desired parent node.
+						var e = document.getElementById('info_container3');
+
+						function setParent(el, newParent)
+						{
+						    newParent.appendChild(el);
+						}
+						setParent(htmlObject3, e);
+
+					var htmlObjectL3 = legend.getContainer();
+						// Get the desired parent node.
+						var f = document.getElementById('legend_container3');
+
+						function setParent(el, newParent)
+						{
+						    newParent.appendChild(el);
+						}
+						setParent(htmlObjectL3, f);
+
+					var mapmed3 = L.map('mapmed3', { zoomControl:false }).setView([34.980061, -79.920941], 3);
+
+					L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+						maxZoom: 5.7,
+						minZoom: 5.7,
+						zoomSnap: 2,
+						attribution: 'Map data from <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="_blank">U.S. Census Bureau</a> + ' + '<a href="https://www.american.edu/spa/ccps/data-sets.cfm" target="_blank">AU School of Public Affairs</a>' ,
+						id: 'mapbox.dark'
+					}).addTo(mapmed3);
+					console.log("map loaded") 
+
+					var geojson5 = L.geoJson(GOP, {style: style_gop}).addTo(mapmed3);
+
+					</script>
+				</span>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Conclusions -->
+	<section id="conclusions" style="padding-top: 2em; margin-bottom: 10px" class="elections-section text-center">
+      	<div class="container">
+    		<div class="row">
+      			<div class="col-lg-8 mx-auto">
+		    		<h2 class="section-title">
+		    			Conclusions
+		    		</h2>
+		    
+			    	<h5 style="text-align: center; font-family: Europa, Work Sans; font-weight: 400">
+			    		Can we find evidence of a relationship between electoral change at the county level and migration?  
+			    	</h5>
+
+				    	<p style="text-align: left">
+		              		The only way we can determine with any certainty that a relationship exists between electoral change and internal migration is if we know the partisan preferences of migrants, in addition to detailed records of their origin and destination counties (which we don't). Since we don't have that data, we can only make guesses about party affiliation based on other characteristics, something that Plane and Jurjevich did in a 2012 paper.<sup><a href="#sources" class="js-scroll-trigger">3</a></sup>  
+		             	</p>
+
+				    	<p style="text-align: left">
+		              		Let's take a look at one more dataset. We are increasingly aware that as voters become more educated, they also become more reliable Demoratic voters. This data, initially published by Pew Research Center in 2014, shows the relationship between education and partisanship in North Carolina specifically.  
+		             	</p>
+
+		             	<img src="img/pew_partisanship_education.png" alt="The table shows the positive relationship between education and likelihood to be a Democratic voter." style="width: 85%">
+		             	<br><br><br>
+
+		             	<p style="text-align: left">
+		              		Because the migration dataset also reveals the educational attainment of movers, and because we know how education shapes political preferences in North Carolina, we can make a coarse inference about what the results could potentially be. I applied the proportions outlined by Pew Research Center to each educational group. So for example, if 100 people with advanced degrees moved to Durham county, I would estimate that 58 of them would be Democrats and 32 of them would be Republicans, ultimately leaving Durham county with 26 more Democratic voters. 
+		             	</p>
+
+		             	<p style="text-align: left">
+		              		It's important to highlight that such a method is far from a perfect one. The original data from the U.S. Census is incomplete and has significant margins of error, it leaves out some migrants, and because Pew Research Center classified somewhere between 10 to 20 percent of all those surveyed as having "mixed" political preferences, some movers are most certainly left out. 
+		             	</p>
+
+		             	<p style="text-align: left">
+		              		What we see, however, is a strong statsitical relationship between migration and on-the-ground change. The table below provides a look at 10 counties: five counties with the highest calculated shifts favoring the Democratic party and five with the highest calculated shifts favoring the Republican party. Indeed, we find that as the estimate favors Democratic candidates, so do on-the-ground results.  
+		             	</p>
+
+		             	<img src="img/partisan_estimates.png" alt="The table provides a snippet of the dataset and shows a strong statistical relationship, with an r-value of .511 and a p-value of .0000006." style="width: 75%">
+
+		             	<br><br><br>
+
+		             	<p style="text-align: left">
+		              		My hope is that I've made the case for two key takeaways: the electoral landscape is changing, and we've got to pay attention to it if we are to successfully navigate our political future. Additionally, though data restrictions keep us from arriving at concrete conclusions about the relationship between migration and electoral change, we've got sufficient evidence to take seriously the possibility that migration could play some role in that evolution.   
+		             	</p>
+
+		             	<br><br><br>
+
+		            
+		            <h2 class="section-title" style="font-size: 1.25em;">
+			    		"Even if a small fraction of partisans make choices on a political basis, the cumulative effect in the long run can greatly augment population differences across space."
+			    	</h2>
+
+			    	<h5 style="text-align: center; font-family: Europa, Work Sans; font-size: 1em; font-weight: 300">
+			    		James Gimpel & Iris Hui, 2015 
+			    	</h5>
+			    </div>
+			</div>
+		</div>
+	</section>
+	<hr />
+
+<!-- Data Section -->
+    <section id="info" style="padding-top: 2em; margin-bottom: 10px" class="elections-section text-center">
+      	<div class="container">
+    		<div class="row">
+      			<div class="col-lg-8 mx-auto">
+		    		<h2 class="section-title">
+		    			Sources & Data
+		    		</h2>
+            		
+            		<h6 style="font-family: 'Europa', Work Sans, Helvetica; font-size: 1.1em; font-weight: 300; margin-top: 0px; margin-bottom: 15px; letter-spacing: 0px" id="sources">
+            			Sources
+            		</h6>
+
+          			<p style="text-align: left; font-size: 1em; padding-bottom: -.5em">
+                		<sup>1</sup>Borjas, George, Stephen Bronars, and Stephen Trejo. 1992. "Self-selection and internal migration in the United States." Journal of Urban Economics 32 (2): 159-185.
+                		
+                		<br><br>
+
+                		<sup>1</sup>Greenwood, M. J. 1975. "Research on internal migration in the United States: a survey." Journal of Economic Literature 397-433.
+						
+                		<br><br>
+
+						<sup>1</sup>Greenwood, M. J., G. L. Hunt, and J. M. McDowell. n.d. "Migration and employment change: empirical evidence on the spatial and temporal dimensions of the linkage." Journal of Regional Science 223-234.
+						
+						<br><br>	
+
+						<sup>1</sup>Long, L. H. 1988. Migration and residential mobility in the United States. New York, NY: Russell Sage Foundation.
+						
+						<br><br>						
+
+						<sup>1</sup>Morrison, Philip, and William Clark. 2011. "Internal migration and employment: macro flows and micro motives." Environment and Planning A: Economy and Space 1948-1964.
+
+						<br><br>
+                		
+                		<sup>2</sup>Enos, Ryan. 2017. The Space Between Us. Cambridge, MA: Harvard University Press.
+
+                		<br><br>
+
+                		<sup>3</sup>Agnew, John, and Luca Muscarà. 2012. <a href="https://www.amazon.com/Making-Political-Geography-John-Agnew/dp/1442212306" target="_blank">Making Political Geography</a>. John Agnew + Luca Muscarà. 2012. Plymouth: Rowman & Littlefield Publishers, Inc.
+        				
+        				<br><br>
+
+        				<sup>4</sup>Jurjevich, Jason, and David Plane. 2012. "Voters on the move: The political effectiveness of migration and its effects on state partisan composition." Political Geography 31: 429-443.
+
       				</p><br>
 
-            <h6 style="font-family: Work Sans, Helvetica; font-size: 1.1em; font-weight: 300; margin-top: 0px; margin-bottom: 15px; letter-spacing: 0px">Other Reading</h6>
+            <h6 style="font-family: 'Europa', Work Sans, Helvetica; font-size: 1.1em; font-weight: 300; margin-top: 0px; margin-bottom: 15px; letter-spacing: 0px">Other Reading</h6>
 
               <p style="text-align: left; font-size: 1em; padding-bottom: -.5em">
                 Bishop, Bill. 2009. <a href="https://www.amazon.com/Big-Sort-Clustering-Like-Minded-America/dp/0547237723" target="_blank">The Big Sort: Why the Clustering of Like-Minded America is Tearing Us Apart</a>. Mariner Books.<br><br>
                 Gimpel, James, and Iris Hui. 2015. "<a href="https://www.sciencedirect.com/science/article/pii/S0962629815000049" target="_blank">Seeking politically compatible neighbors? The role of neighborhood partisan composition in residential sorting.</a>" <em>Political Geography</em> 48: 130-142.<br><br>
                 Holbrook, Thomas. 2016. <a href="https://www.amazon.com/Altered-States-Populations-Transformation-Political/dp/0190269138/ref=sr_1_1?s=books&ie=UTF8&qid=1527109967&sr=1-1&keywords=altered+states+holbrook" target="_blank">Altered States: Changing Populations, Changing Parties, and the Transformation of the American Political Landscape</a>. Oxford University Press.</p><br>
 
-            <h6 style="font-family: Work Sans, Helvetica; font-size: 1.1em; font-weight: 300; margin-top: 0px; margin-bottom: 15px; letter-spacing: 0px">Election + Map Data</h6>
+            <h6 style="font-family: 'Europa', Work Sans, Helvetica; font-size: 1.1em; font-weight: 300; margin-top: 0px; margin-bottom: 15px; letter-spacing: 0px">Data</h6>
 
-          		<p style="text-align: left; font-size: 1em">I pulled the 2016 election data from <a href="https://uselectionatlas.org/" target="_blank">Dave Leip's Election Atlas</a>, the 2000 election data from <a href="https://www.american.edu/spa/ccps/data-sets.cfm" target="_blank">American University's School of Public Affairs</a>, and the shapefiles from the <a href="https://uselectionatlas.org/" target="_blank">U.S. Census Bureau</a>.</p>
+          		<p style="text-align: left; font-size: 1em">I pulled the 2016 election data from <a href="https://uselectionatlas.org/" target="_blank">Dave Leip's Election Atlas</a>, the 2000 election data from <a href="https://www.american.edu/spa/ccps/data-sets.cfm" target="_blank">American University's School of Public Affairs</a>, and the shapefiles from the <a href="https://uselectionatlas.org/" target="_blank">U.S. Census Bureau</a>. The migration data came from the <a href="https://www.census.gov/data/tables/2011/demo/geographic-mobility/county-to-county-migration-2007-2011.html" target="_blank">U.S. Census Bureau</a>.</p>
 
             <a href="https://uselectionatlas.org/" class="btn btn-default btn-lg" style="display: none">Dave Leip's Election Atlas</a>
             <a href="https://uselectionatlas.org/" class="btn btn-default btn-lg" style="display: none">U.S. Census Bureau</a>
@@ -1124,7 +1659,7 @@ setParent(htmlObjectL, d);
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Thanks for checking out my work.</h2>
-            <p>Feel free to reach out with questions or comments at <a href="mailto:katip@uoregon.edu?Subject=Political%20polarization%20in%20North%20Carolina" target="_top">katip@uoregon.edu</a>.<br>For more on what I'm up to, check out my <a href="http://www.katherinefperry.com" target="_blank">portfolio</a>.</p>
+            <p>Feel free to reach out with questions or comments at <a href="mailto:katip@uoregon.edu?Subject=Political%20polarization%20in%20North%20Carolina" target="_top">katip@uoregon.edu</a>.<br> I'm more than happy to share data, code, and sources. For more on what I'm up to, check out my <a href="http://www.katherinefperry.com" target="_blank">portfolio</a>.</p>
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
                 <a href="https://twitter.com/kfperry" class="btn btn-default btn-lg">
@@ -1155,6 +1690,7 @@ setParent(htmlObjectL, d);
     <footer>
       <div class="container text-center">
         <p>Copyright &copy; Katherine Perry 2018</p>
+        <p>Updated April 2019</p>
       </div>
     </footer>
 
